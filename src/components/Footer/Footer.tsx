@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowUpIcon } from '@heroicons/react/24/solid';
 import networks from './networks.json';
+import { motion } from 'framer-motion';
+
 
 export const Footer: React.FC = () => {
     const [socialLinks, setSocialLinks] = useState(networks.socialLinks);
@@ -8,14 +10,17 @@ export const Footer: React.FC = () => {
 
     return (
         <footer className="bg-(--primary-800) text-white py-8">
-            {/* Fleche */}
             <div className="flex justify-center mb-6">
-                <a href="#" className="text-xl hover:text-primary-500">
-                    <ArrowUpIcon className="w-8 h-8 text-white hover:text-primary-500 transition-colors duration-300" />
-                </a>
+                <motion.a
+                    href="#"
+                    className="text-xl hover:text-primary-500"
+                    whileHover={{ y: -5 }} // hover vers le haut
+                    transition={{ type: "spring", stiffness: 300 }} // RESORT TYPE
+                >
+                    <ArrowUpIcon className="w-8 h-8 text-white transition-colors duration-300" />
+                </motion.a>
             </div>
 
-            {/* Réseaux sociaux */}
             <div className="flex justify-center space-x-8">
                 {socialLinks.map((link, index) => (
                     <div key={index} className="group hover:scale-105 transition-transform duration-300">
@@ -23,7 +28,6 @@ export const Footer: React.FC = () => {
                             href={link.url}
                             className="flex items-center space-x-3"
                             target="_blank"
-                            rel="noopener noreferrer"
                             title={link.name}
                         >
                             <img
@@ -40,7 +44,6 @@ export const Footer: React.FC = () => {
                 ))}
             </div>
 
-            {/* Copyright */}
             <p className="text-center text-sm mt-8 text-gray-400 border-t-1 pt-2">
                 Copyright © {currentYear} - Héléna Chevalier - Tous droits réservés
             </p>

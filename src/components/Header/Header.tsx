@@ -4,7 +4,7 @@ export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 w-full bg-(--primary-500) text-white py-4 z-50 ">
+        <header className="fixed top-0 left-0 w-full bg-(--primary-800) text-white py-4 z-50 ">
         <div className="container mx-auto flex justify-between items-center px-6">
             <h3 className="text-xl">CHEVALIER HELENA</h3>
             

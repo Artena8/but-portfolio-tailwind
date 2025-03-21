@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { sendEmail } from "../../services/MailServices";
 import { motion } from "framer-motion";
+import { ArrowDownIcon } from "@heroicons/react/24/solid";
 
 export const About: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -19,51 +20,63 @@ export const About: React.FC = () => {
     };
 
     return (
-        <div id="Moi" className="flex relative z-20 items-center overflow-hidden mt-10 h-screen">
-            <div className="container mx-auto px-6 flex relative py-16">
-                <div className="md:w-2/3 lg:w-3/5 flex flex-col relative z-20">
-                    <h1 className=" pr-5 text-8xl font-bold uppercase text-primary-500 flex flex-col">
-                        Héléna Chevalier
-                    </h1>
-                    <h2 className="animate-typing max-w-max overflow-hidden whitespace-nowrap border-r-4 border-r-primary-500 pr-5 text-5xl font-bold uppercase text-primary-500 flex flex-col">
-                        Développeuse
-                    </h2>
+        <div id="Moi" className="flex flex-col relative z-20 items-center overflow-hidden min-h-screen m-auto">
+            <div className="container mx-auto px-6 relative flex flex-row min-h-screen">
+                <div className="w-full flex flex-row m-auto">
+                    <div className="md:w-2/3 lg:w-3/5 flex flex-col relative z-20 w-full">
+                        <h1 className="pr-5 text-8xl font-bold uppercase text-(--primary-500) flex flex-col">
+                            Héléna Chevalier
+                        </h1>
+                        <h2 className="animate-typing max-w-max overflow-hidden whitespace-nowrap border-r-4 border-r-(--primary-600) pr-5 text-5xl font-bold uppercase text-(--primary-600) flex flex-col">
+                            Développeuse
+                        </h2>
 
-                    <p className="text-sm sm:text-base mt-4 ">
-                        Bonjour, je m’appelle <b>Héléna Chevalier</b>, 20 ans, étudiante en <b>3ème année en BUT Informatique</b> à l’IUT Gustave-Eiffel.
-                        Passionnée par l’informatique, je suis en alternance à la <b>CNAV</b> en tant que développeuse <b>C#</b>.
-                    </p>
-                    <div className="flex mt-8">
-                        <a
-                            href="./pdf/CV_Helena_Chevalier.pdf"
-                            className="uppercase py-2 px-4 rounded-lg bg-(--primary-500) text-white text-md mr-4 hover:bg-(--primary-700)"
-                        >
-                            Voir mon CV
-                        </a>
-                        <button
-                            onClick={() => setIsModalOpen(true)}
-                            className="cursor-pointer uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-(--primary-500) text-(--primary-500) text-md hover:border-(--primary-700) hover:text-(--primary-700)"
-                        >
-                            Contactez-moi
-                        </button>
+                        <p className="text-sm sm:text-base mt-4">
+                            Bonjour, je m’appelle <b>Héléna Chevalier</b>, 20 ans, étudiante en <b>3ème année en BUT Informatique</b> à l’IUT Gustave-Eiffel.
+                            Passionnée par l’informatique, je suis en alternance à la <b>CNAV</b> en tant que développeuse <b>C#</b>.
+                        </p>
+                        <div className="flex mt-8">
+                            <a
+                                href="./pdf/CV_Helena_Chevalier.pdf"
+                                className="uppercase py-2 px-4 rounded-lg bg-(--primary-500) text-white text-md mr-4 hover:bg-primary-700"
+                            >
+                                Voir mon CV
+                            </a>
+                            <button
+                                onClick={() => setIsModalOpen(true)}
+                                className="cursor-pointer uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-(--primary-500) text-(--primary-500) text-md hover:border-(--primary-700) hover:text-(--primary-700)"
+                            >
+                                Contactez-moi
+                            </button>
+                        </div>
+                    </div>
+                    <div className="hidden md:block md:w-1/3 lg:w-2/5 relative">
+                        <img
+                            src="./img/me.png"
+                            alt="Héléna Chevalier"
+                            className="max-w-xs md:max-w-sm m-auto rounded-lg shadow-lg"
+                        />
                     </div>
                 </div>
-                <div className="hidden md:block md:w-1/3 lg:w-2/5 relative">
-                    <img
-                        src="./img/me.png"
-                        alt="Héléna Chevalier"
-                        className="max-w-xs md:max-w-sm m-auto rounded-lg shadow-lg"
-                    />
-                </div>
+            </div>
+            <div className="-mt-64 flex justify-center w-full z-1">
+                <motion.a
+                    href="#Skills"
+                    className="text-xl hover:text-primary-500"
+                    whileHover={{ y: [-5, 5, -5] }}
+                    transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                >
+                    <ArrowDownIcon className="w-8 h-8 scale-150 text-secondary-500 transition-colors duration-300" />
+                </motion.a>
             </div>
 
             {/* Modal */}
             {isModalOpen && (
                 <motion.div
                     className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black/60 z-50"
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                     <motion.div
@@ -75,19 +88,23 @@ export const About: React.FC = () => {
                     >
                         <div className="flex items-center justify-between border-b pb-3">
                             <div>
-                                <h3 className="text-xl font-semibold text-gray-900">Contactez-moi !</h3>
+                                <h3 className="text-xl font-semibold text-(--primary-500)">Contactez-moi !</h3>
                                 <p>N'hésitez pas à m'envoyer un message par ce formulaire ou via mes réseaux sociaux</p>
                             </div>
                             <button
                                 onClick={() => setIsModalOpen(false)}
                                 className="text-gray-400 hover:bg-gray-200 rounded-lg p-2"
+                                aria-label="Fermer le formulaire"
+                                aria-hidden="true"
                             >
                                 &times;
                             </button>
                         </div>
                         <form className="mt-4 space-y-4" onSubmit={handleSendEmail}>
                             <div>
-                                <label className="block text-sm font-medium text-gray-700">Votre email pour que je vous recontacte</label>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    Votre email pour que je vous recontacte :
+                                </label>
                                 <input
                                     type="email"
                                     className="mt-1 block w-full border border-gray-300 rounded-lg p-2"
@@ -97,10 +114,9 @@ export const About: React.FC = () => {
                                 />
                             </div>
                             <div>
-                                <label className="block text-sm font-medium text-gray-700">Message</label>
+                                <label className="block text-sm font-medium text-gray-700">Votre message : </label>
                                 <textarea
                                     className="mt-1 block w-full border border-gray-300 rounded-lg p-2"
-                                    placeholder="Votre message..."
                                     required
                                     rows={5}
                                     value={message}
@@ -108,15 +124,14 @@ export const About: React.FC = () => {
                                 />
                             </div>
                             <div>
-                            <button
-                                type="submit"
-                                className="w-full bg-(--primary-500) text-white py-2 rounded-lg hover:bg-primary-700"
-                                disabled={isSending}
-                            >
-                                {isSending ? "Envoi en cours..." : "Envoyer"}
-                            </button>
+                                <button
+                                    type="submit"
+                                    className="w-full bg-(--primary-500) text-white py-2 rounded-lg hover:bg-(--primary-700) cursor-pointer"
+                                    disabled={isSending}
+                                >
+                                    {isSending ? "Envoi en cours..." : "Envoyer"}
+                                </button>
                             </div>
-
                         </form>
                     </motion.div>
                 </motion.div>

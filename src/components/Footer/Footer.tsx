@@ -1,62 +1,49 @@
-import React from 'react';
-import './Footer.css';
+import React, { useEffect, useState } from 'react';
+import { ArrowUpIcon } from '@heroicons/react/24/solid';
+import networks from './networks.json';
 
 export const Footer: React.FC = () => {
-    return (
-        <footer>
-        <div className="fleche">
-            <a href="#">↑</a>
-        </div>
-        <div className="social-links">
-            <div className="animation">
-            <a
-                href="https://github.com/Artena8/"
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Github"
-            >
-                <div>
-                <div className="social-name">GitHub</div>
-                <div className="social-pseudo">@Artena8</div>
-                </div>
-                <img src="img/icones8/github.png" alt="Github" />
-            </a>
-            </div>
-            <div className="animation">
-            <a
-                href="https://www.linkedin.com/in/h%C3%A9l%C3%A9na-chevalier-720085236/"
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Linkedin"
-            >
-                <div>
-                <div className="social-name">Linkedin</div>
-                <div className="social-pseudo">@helena-Chevalier</div>
-                </div>
-                <img src="img/icones8/linkedin.png" alt="Linkedin" />
-            </a>
-            </div>
-            <div className="animation">
-            <a
-                href="https://www.instagram.com/hellyow8/"
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Instagram"
-            >
-                <div>
-                <div className="social-name">Instagram</div>
-                <div className="social-pseudo">@hellyow8</div>
-                </div>
-                <img src="img/icones8/instagram.png" alt="Instagram" />
-            </a>
-            </div>
-        </div>
+    const [socialLinks, setSocialLinks] = useState(networks.socialLinks);
+    const currentYear = new Date().getFullYear();
 
-        <p className="droits">Copyright © 2023 - Héléna Chevalier - Tous droits réservés</p>
+    return (
+        <footer className="bg-(--primary-800) text-white py-8">
+            {/* Fleche */}
+            <div className="flex justify-center mb-6">
+                <a href="#" className="text-xl hover:text-primary-500">
+                    <ArrowUpIcon className="w-8 h-8 text-white hover:text-primary-500 transition-colors duration-300" />
+                </a>
+            </div>
+
+            {/* Réseaux sociaux */}
+            <div className="flex justify-center space-x-8">
+                {socialLinks.map((link, index) => (
+                    <div key={index} className="group hover:scale-105 transition-transform duration-300">
+                        <a
+                            href={link.url}
+                            className="flex items-center space-x-3"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={link.name}
+                        >
+                            <img
+                                src={link.icon}
+                                alt={link.alt}
+                                className="w-8 h-8 transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div className="text-sm">
+                                <div className="font-semibold">{link.name}</div>
+                                <div className="text-gray-400">{link.username}</div>
+                            </div>
+                        </a>
+                    </div>
+                ))}
+            </div>
+
+            {/* Copyright */}
+            <p className="text-center text-sm mt-8 text-gray-400 border-t-1 pt-2">
+                Copyright © {currentYear} - Héléna Chevalier - Tous droits réservés
+            </p>
         </footer>
     );
 };
-

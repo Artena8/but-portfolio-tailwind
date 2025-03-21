@@ -6,7 +6,7 @@ export const Skills: React.FC = () => {
 
   return (
     <div id="Skills" className="Skills py-10">
-      <h2 className="text-3xl font-semibold text-center mb-8">Mes compétences</h2>
+      <h2 className="text-3xl font-semibold text-center mb-8 mt-8">Mes compétences</h2>
       <p className="text-lg text-center my-4">
         Lorsque vous <span className='text-pink-800 font-bold text-xl'>survolez une compétence</span>, son degré de maîtrise (pourcentage) apparaît sur la barre de progression.
       </p>

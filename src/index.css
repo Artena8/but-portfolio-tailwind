@@ -24,6 +24,12 @@
   --dark-700 : #28262C;
 }
 
+/* CSS PRINCIPAL */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-lexend);
   color : var(--dark-700);
@@ -33,4 +39,29 @@ h2 {
   font-weight: bolder;
   font-size: 3rem;
   color : var(--primary-700);
+}
+
+/* ANIMATIONS */
+
+@keyframes typing {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color:  var(--primary-600);
+  }
+}
+
+.animate-typing {
+  animation: typing 4s steps(30) infinite alternate, blink .7s infinite;
 }

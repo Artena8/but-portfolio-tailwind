@@ -1,0 +1,18 @@
+{
+    "socialLinks": [
+    {
+        "name": "GitHub",
+        "username": "@Artena8",
+        "url": "https://github.com/Artena8/",
+        "icon": "./icones8/github.png",
+        "alt": "Github"
+    },
+    {
+        "name": "LinkedIn",
+        "username": "@helena-Chevalier",
+        "url": "https://www.linkedin.com/in/h%C3%A9l%C3%A9na-chevalier-720085236/",
+        "icon": "./icones8/linkedin.png",
+        "alt": "Linkedin"
+    }
+    ]
+}

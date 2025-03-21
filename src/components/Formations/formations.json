@@ -1,0 +1,56 @@
+{
+    "Formations & expériences professionnelles": {
+        "title": "Formations & expériences professionnelles",
+        "items": [
+            {
+            "id": "PSC",
+            "date": "2019",
+            "titre": "Prévention et secours civiques de niveau 1 (PSC1)",
+            "description": "Le PSC1 est la formation de base aux premiers secours à destination du grand public"
+            },
+            {
+            "id": "GGSB1",
+            "date": "2019-2019",
+            "titre": "Stage 3e - Découverte de l'entreprise",
+            "description": "Assistant Gestionnaire de biens\n Assure le suivi des attributions logicielles et matériel"
+            },
+            {
+            "id": "GGSB2",
+            "date": "2019-2022",
+            "titre": "Baccalauréat Général",
+            "description": "Mention Bien\n Spécialités Mathématiques / Physique-Chimie / LLCER"
+            },
+            {
+            "id": "Sololearn",
+            "date": "2021 - 2023",
+            "titre": "Certifications Sololearn",
+            "description": "Cours de programmation en ligne",
+            "certifications": [
+                "Introduction C#",
+                "HTML",
+                "Responsive Web Design",
+                "C# Intermediare",
+                "CSS"
+            ]
+            },
+            {
+            "id": "BUT",
+            "date": "2022 - 2025",
+            "titre": "BUT Informatique 2",
+            "description": "Parcours A : réalisation d'applications : conception, développement, validation"
+            },
+            {
+            "id": "Alternance",
+            "date": "2023 - 2025",
+            "titre": "Alternance Développeuse CNAV",
+            "description": "Développeuse au sein de l'équipe régionale d'Ile de France",
+            "missions": [
+                "Développement SharePoint",
+                "Participation aux réunions d’équipe pour faire état de l’avancement de ses tâches",
+                "Être force de proposition",
+                "Suivre le mode de fonctionnement de l’entreprise"
+            ]
+            }
+        ]
+    }
+}

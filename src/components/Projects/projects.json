@@ -1,0 +1,163 @@
+{
+    "Mes Projets & Créations": {
+      "title": "Mes Projets & Créations",
+      "categories": {
+        "Réaliser": {
+          "title": "Réaliser",
+          "projects": [
+            {
+              "name": "SplaaatBall",
+              "link": "https://github.com/InkyYuu/Splaaatball",
+              "image": "./img/SPLAAATBALL.svg",
+              "tools": ["Python"],
+              "description": "Jeu 'Guerre de territoire' implémenté en python pour 2 joueurs en écran partagé. Placez vos pions de couleur pour recouvrir un maximum l'écran et gagner la partie !",
+              "skills": [
+                "Implémenter et Élaborer des conceptions simples",
+                "Tester une application et avoir un regard critique",
+                "Formaliser et implémenter des outils mathématiques en informatique"
+              ]
+            },
+            {
+              "name": "BackPack Hero",
+              "link": "https://github.com/InkyYuu/Backpack-Hero",
+              "image": "./img/Rat_Wolf.png",
+              "tools": ["Java - POO"],
+              "description": "Jeu roguelike ! Partez à l'aventure avec votre sac à dos pour parcourir le donjon en abattant les monstres avec vos différents trésors !",
+              "skills": [
+                "Développer des interfaces utilisateurs",
+                "Implémenter et Élaborer des conceptions simples",
+                "Implémenter des conceptions Orienté Objet",
+                "Vérifier et valider la qualité de l’application par les tests"
+              ]
+            },
+            {
+              "name": "PimpMyPaid (En cours)",
+              "image": "./img/logorect.png",
+              "tools": ["PHP", "HTML", "CSS", "JS"],
+              "description": "PimpMyPaid un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
+              "skills": [
+                "Adopter de bonnes pratiques de conception et de programmation",
+                "Vérifier et valider la qualité de l’application par les tests",
+                "Définir et mettre en œuvre une démarche de suivi de projet",
+                "Appliquer une démarche pour intégrer une équipe informatique au sein d’une organisation"
+              ]
+            },
+            {
+              "name": "Links Awordkening : Where Words Unite (En cours)",
+              "image": "./img/saela.jpg",
+              "tools": ["C", "Java", "SQL", "HTML", "CSS", "PHP", "Python", "Node JS", "React", "TypeScript"],
+              "description": "Jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime…",
+              "skills": [
+                "Élaborer et implémenter les spécifications fonctionnelles à partir des exigences",
+                "Choisir des structures de données complexes adaptées au problème",
+                "Concevoir et développer des applications communicantes",
+                "Formaliser les besoins du client et de l’utilisateur",
+                "Définir et mettre en œuvre une démarche de suivi de projet"
+              ]
+            }
+          ]
+        },
+        "Optimiser": {
+          "title": "Optimiser",
+          "projects": [
+            {
+              "name": "Graphes & Automates",
+              "link": "https://github.com/InkyYuu/Graphes",
+              "image": "./img/grahes.png",
+              "tools": ["Python"],
+              "description": "Exploration algorithmique d'un programme avec les graphes : Implémentation des différents algorithmes de graphes en python.",
+              "skills": [
+                "Analyser un problème avec méthode",
+                "Comparer des algorithmes pour des problèmes classiques",
+                "Formaliser et implémenter des outils mathématiques en informatique"
+              ]
+            }
+          ]
+        },
+        "Administrer": {
+          "title": "Administrer",
+          "projects": [
+            {
+              "name": "Coming soon (En cours)",
+              "image": "./img/carre.jpg",
+              "tools": [],
+              "description": "Un projet de serveur est en cours ! Revenez vite pour en savoir plus."
+            }
+          ]
+        },
+        "Gérer": {
+          "title": "Gérer",
+          "projects": [
+            {
+              "name": "Daktari (Reupload en cours)",
+              "image": "./img/veterinaire-medecine.jpg",
+              "tools": ["PostGreSQL", "HTML", "PHP"],
+              "description": "Création d’une base de donnée pour un professionnel (fictif) à partir d’un cahier des charges.",
+              "skills": [
+                "Concevoir une base de données relationnelle à partir d’un cahier des charges",
+                "Mettre à jour et interroger une base de données relationnelle",
+                "Visualiser des données"
+              ]
+            }
+          ]
+        },
+        "Collaborer": {
+          "title": "Collaborer",
+          "projects": [
+            {
+              "name": "Site Web Grenade",
+              "link": "http://perso-etudiant.u-pem.fr/~helena.chevalier/unesco/accueil.php",
+              "image": "./img/UNESCO.png",
+              "tools": ["HTML", "CSS", "PHP", "JS"],
+              "description": "Site web réalisé pour une projet de revalorisation de l'UNESCO sur la péninsule ibérique.",
+              "skills": [
+                "Appréhender les besoins du client et de l’utilisateur",
+                "Identifier les acteurs et les différentes phases d’un cycle de développement",
+                "Acquérir les compétences interpersonnelles pour travailler en équipe"
+              ]
+            },
+            {
+              "name": "BricoBoulot",
+              "link": "https://www.figma.com/proto/CGwj66Bzs87QX8I2Wv5KkE/APP-UNESCO?type=design&node-id=18-4&t=zurdSeSRyZlQGZo6-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=63%3A54&show-proto-sidebar=1",
+              "image": "./img/Bricoboulot.png",
+              "tools": ["Figma"],
+              "description": "Maquettage avec Figma d'une application pour aider les bricoleurs dans leurs projets depuis leur téléphone (Projet de IHM à 4 personnes).",
+              "skills": [
+                "Mettre en place les outils de gestion de projet",
+                "Concevoir des interfaces utilisateurs",
+                "Comprendre le modèle IHM"
+              ]
+            },
+            {
+              "name": "Caminar",
+              "link": "https://www.figma.com/proto/CGwj66Bzs87QX8I2Wv5KkE/APP-UNESCO?type=design&node-id=18-4&t=zurdSeSRyZlQGZo6-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=63%3A54&show-proto-sidebar=1",
+              "image": "./img/Caminar.png",
+              "tools": ["Figma"],
+              "description": "Maquettage d'une application en lien avec le projet pour l'UNESCO. Le but de l'application est de permettre de se balader dans Grenade de manière interactive.",
+              "skills": [
+                "Concevoir des interfaces utilisateurs",
+                "Chercher à optimiser l’ergonomie et l’accessibilité"
+              ]
+            }
+          ]
+        },
+        "Compta 101": {
+          "title": "Compta 101",
+          "projects": [
+            {
+              "name": "Compta 101",
+              "link": "https://github.com/Artena8/Compta101",
+              "image": "./img/compta.avif",
+              "tools": ["Python"],
+              "description": "Programmes python pour calculer le taux linéaire, le taux dégressif et faire la balance. Le code est à peu près formaté pour un affichage propre sur calculatrice.",
+              "skills": [
+                "Appréhender les besoins du client et de l’utilisateur",
+                "Implémenter des concepts simples"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  

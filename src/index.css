@@ -42,6 +42,18 @@ h2 {
   color : var(--primary-700);
 }
 
+@media (max-height: 800px) {
+  .mt-custom {
+    margin-top: -10vh;
+  }
+}
+
+@media (max-height: 450px) {
+  .mt-custom {
+    display: none;
+  }
+}
+
 /* ANIMATIONS */
 
 @keyframes typing {

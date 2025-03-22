@@ -42,7 +42,7 @@ export const Skills: React.FC = () => {
               <div key={key} className="p-6 rounded-lg shadow-md border border-(--primary-500)">
                 <div className="flex items-center mb-4">
                   <img
-                    src="https://assets-global.website-files.com/6544b441193708790616f888/6544d0a1401d9558a3184287_Vectors-Wrapper.svg"
+                    src={section.icon}
                     loading="lazy"
                     width="48"
                     height="48"

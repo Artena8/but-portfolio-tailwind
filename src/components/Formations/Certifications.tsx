@@ -20,7 +20,7 @@ export const Certifications = () => {
                         </div>
                         <div className="ml-4 w-4/5">
                             <h3 className="text-md font-semibold text-gray-900">{certification.titre}</h3>
-                            <p className="text-sm text-gray-500">{certification.source} - {certification.date}</p>
+                            <p className="text-sm text-gray-600">{certification.source} - {certification.date}</p>
                         </div>
                     </div>
                 ))}

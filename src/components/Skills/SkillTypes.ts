@@ -6,6 +6,7 @@ export type Competence = {
 export type Section = {
     titre: string;
     description: string;
+    icon : string;
     competences: Competence[];
 }
 

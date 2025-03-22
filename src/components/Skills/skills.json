@@ -2,6 +2,7 @@
     "Planification": {
         "titre": "Planification",
         "description": "Gérer des projets",
+        "icon" : "./icones8/plan.svg",
         "competences": [
             {"competence": "Méthode Agile", "pourcentage": 85},
             {"competence": "Scrum", "pourcentage": 80},
@@ -15,6 +16,7 @@
     "FRONT END": {
         "titre": "Développement Front-End",
         "description": "Interaction Utilisateur",
+        "icon" : "./icones8/frontend.svg",
         "competences": [
             {"competence": "HTML5", "pourcentage": 90},
             {"competence": "CSS3 ", "pourcentage": 85},
@@ -28,6 +30,7 @@
     "BACK-END": {
         "titre": "Développement Back-End",
         "description": "Fonctionnement du programme",
+        "icon" : "./icones8/backend.svg",
         "competences": [
             {"competence": "PHP", "pourcentage": 80},
             {"competence": "JAVA (IntelliJ / Eclipse)", "pourcentage": 70},
@@ -41,6 +44,7 @@
     "GESTION DONNEES": {
         "titre": "Gestion des données",
         "description": "Stocker et analyser les données",
+        "icon" : "./icones8/data.svg",
         "competences": [
             {"competence": "SQL", "pourcentage": 85},
             {"competence": "PostGreSQL", "pourcentage": 75},
@@ -52,6 +56,7 @@
     "DevOps": {
         "titre": "Système",
         "description": "Intégrer les processus dans un projet",
+        "icon" : "./icones8/pc.svg",
         "competences": [
             {"competence": "Linux", "pourcentage": 80},
             {"competence": "Windows", "pourcentage": 75},
@@ -63,6 +68,7 @@
     "UI UX": {
         "titre": "Design",
         "description": "Se créer un personal branding",
+        "icon" : "./icones8/design.svg",
         "competences": [
             {"competence": "Figma", "pourcentage": 90},
             {"competence": "SVGator", "pourcentage": 75},

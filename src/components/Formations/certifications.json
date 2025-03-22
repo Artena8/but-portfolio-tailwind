@@ -1,0 +1,47 @@
+{
+    "title": "Certifications",
+    "items": [
+        {
+            "id": "PSC1",
+            "date": "2019",
+            "titre": "Prévention et secours civiques de niveau 1 (PSC1)",
+            "source": "Sololearn",
+            "type" : "civique"
+        },
+        {
+            "id": "TOEIC",
+            "date": "2025",
+            "titre": "TOEIC - EN COURS",
+            "source": "ETS Global",
+            "type" : "langue"
+        },
+        {
+            "id": "PIX",
+            "date": "2019 / 2025",
+            "titre": "Certification (PIX Novice 2) - EN COURS",
+            "source": "PIX",
+            "type" : "code"
+        },
+        {
+            "id": "Permis",
+            "date": "2025",
+            "titre": "Permis de conduire B",
+            "source": "En cours",
+            "type" : "civique"
+        },
+        {
+            "id": "Sololearn_C#1",
+            "date": "2023",
+            "titre": "Introduction C#",
+            "source": "Sololearn",
+            "type" : "code"
+        },
+        {
+            "id": "Sololearn_C#2",
+            "date": "2023",
+            "titre": "C# Intermédiaire",
+            "source": "Sololearn",
+            "type" : "code"
+        }
+    ]
+}  

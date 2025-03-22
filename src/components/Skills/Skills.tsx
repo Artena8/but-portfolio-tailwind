@@ -1,22 +1,43 @@
 import React, { useState } from 'react';
 import jsonData from './skills.json';
+import { JsonData } from '.';
 
 export const Skills: React.FC = () => {
   const [hovered, setHovered] = useState<string | null>(null);
 
   return (
     <div id="Skills" className="Skills py-10">
-      <h2 className="text-3xl font-semibold text-center mb-8 mt-8">Mes compétences</h2>
-      <p className="text-lg text-center my-4">
-        Lorsque vous <span className='text-pink-800 font-bold text-xl'>survolez une compétence</span>, son degré de maîtrise (pourcentage) apparaît sur la barre de progression.
-      </p>
+      <div className="flex justify-center items-center gap-4 mb-8 mt-8">
+        <h2 className="text-3xl font-semibold text-center">Mes compétences</h2>
+      </div>
 
       <div className="container mx-auto px-2">
-        <h3 className="text-2xl font-medium mb-6">Mes Langages & Outils</h3>
+        <h3 className="text-2xl font-medium mb-6">
+            Mes Langages & Outils
+
+            <label className={`inline-flex items-center justify-between mx-4 px-2 cursor-pointer transition-colors
+                text-(--secondary-600)  border-2  rounded-lg 
+                ${hovered === "all" ? "bg-(--primary-500) border-(--primary-500) text-white" : 
+                "hover:text-(--secondary-700) hover:border-(--secondary-700) bg-(--secondary-200) border-(--secondary-600)"}
+            `}>                           
+                <input 
+                    type="checkbox" 
+                    id="react-option" 
+                    className="hidden peer"
+                    checked={hovered === "all"}
+                    onChange={() => setHovered(hovered === "all" ? null : "all")}
+                />
+                <div className="block">
+                    <div className="w-full text-sm">
+                        Afficher l'ensemble des degrés de maîtrise
+                    </div>
+                </div>
+            </label>
+        </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Object.keys(jsonData).map((key) => {
-            const section = jsonData[key];
+            const section = jsonData[key as keyof JsonData];
             return (
               <div key={key} className="p-6 rounded-lg shadow-md border border-(--primary-500)">
                 <div className="flex items-center mb-4">
@@ -35,23 +56,23 @@ export const Skills: React.FC = () => {
                 </div>
 
                 <div className="space-y-2">
-                  {section.competences.map((competence: { competence: string; pourcentage: number }, index: React.Key | null | undefined) => (
+                  {section.competences.map((competence, index) => (
                     <div
                       key={index}
                       className="flex justify-between items-center"
-                      onMouseEnter={() => setHovered(competence.competence)}
-                      onMouseLeave={() => setHovered(null)}
+                      onMouseEnter={() => hovered !== "all" && setHovered(competence.competence)}
+                      onMouseLeave={() => hovered !== "all" && setHovered(null)}
                     >
                       <p className='w-3/5'>{competence.competence}</p>
-                      <div className="relative w-2/5 h-2 rounded-full">
-                        <div className="w-full rounded-full">
-                          <div className="bg-(--primary-500) text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full transition-all duration-500 ease-in-out"                           
-                            style={{
-                              width: hovered === competence.competence ? `${competence.pourcentage}%` : '0%',
-                              opacity: hovered === competence.competence ? 1 : 0,
-                            }}> 
-                            {competence.pourcentage}% 
-                          </div>
+                      <div className={`relative w-2/5 h-2 rounded-full`}>
+                        <div
+                          className="bg-(--primary-500) text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full transition-all duration-500 ease-in-out"
+                          style={{
+                            width: hovered === competence.competence || hovered === "all" ? `${competence.pourcentage}%` : '0%',
+                            opacity: hovered === competence.competence || hovered === "all" ? 1 : 0,
+                          }}
+                        >
+                          {competence.pourcentage}%
                         </div>
                       </div>
                     </div>
@@ -60,29 +81,6 @@ export const Skills: React.FC = () => {
               </div>
             );
           })}
-        </div>
-
-        <h3 className="text-2xl font-medium mt-8 mb-6">On dit de moi que je suis ...</h3>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {["Responsable", "Créative", "Organisée"].map((qualite, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <img
-                  src="https://assets-global.website-files.com/6544b441193708790616f888/6544d0a1401d9558a3184287_Vectors-Wrapper.svg"
-                  loading="lazy"
-                  width="48"
-                  height="48"
-                  alt="icon"
-                  className="mr-4"
-                />
-                <div>
-                  <h4 className="text-xl font-semibold">{qualite}</h4>
-                  <p className="text-sm text-gray-500">Une petite description ici...</p>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </div>

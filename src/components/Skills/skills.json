@@ -17,11 +17,12 @@
         "description": "Interaction Utilisateur",
         "competences": [
             {"competence": "HTML5", "pourcentage": 90},
-            {"competence": "CSS ", "pourcentage": 85},
-            {"competence": "Javascript / TypeScript", "pourcentage": 80},
-            {"competence": "Bootstrap", "pourcentage": 75},
+            {"competence": "CSS3 ", "pourcentage": 85},
+            {"competence": "Javascript", "pourcentage": 75},
+            {"competence": "TypeScript (React)", "pourcentage": 75},
             {"competence": "Tailwind", "pourcentage": 25},
-            {"competence": "PowerApps / Power Automate", "pourcentage": 50}
+            {"competence": "Power Apps", "pourcentage": 50},
+            {"competence": "Power Automate", "pourcentage": 50}
         ]
     },
     "BACK-END": {

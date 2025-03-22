@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { sendEmail } from "../../services/MailServices";
 import { motion } from "framer-motion";
-import { ArrowDownIcon } from "@heroicons/react/24/solid";
+import { ChevronDoubleDownIcon } from "@heroicons/react/24/solid";
 
 export const About: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -59,14 +59,14 @@ export const About: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="-mt-64 flex justify-center w-full z-1">
+            <div className="-mt-48 flex justify-center w-full z-1">
                 <motion.a
                     href="#Skills"
                     className="text-xl hover:text-primary-500"
                     whileHover={{ y: [-5, 5, -5] }}
                     transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
                 >
-                    <ArrowDownIcon className="w-8 h-8 scale-150 text-secondary-500 transition-colors duration-300" />
+                    <ChevronDoubleDownIcon className="w-8 h-8 scale-150 text-secondary-500 transition-colors duration-300" />
                 </motion.a>
             </div>
 

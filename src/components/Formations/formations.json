@@ -1,56 +1,49 @@
 {
-    "Formations & expériences professionnelles": {
-        "title": "Formations & expériences professionnelles",
-        "items": [
-            {
-            "id": "PSC",
-            "date": "2019",
-            "titre": "Prévention et secours civiques de niveau 1 (PSC1)",
-            "description": "Le PSC1 est la formation de base aux premiers secours à destination du grand public"
-            },
-            {
+    "title": "Certifications Professionnelles",
+    "items": [
+        {
             "id": "GGSB1",
-            "date": "2019-2019",
-            "titre": "Stage 3e - Découverte de l'entreprise",
-            "description": "Assistant Gestionnaire de biens\n Assure le suivi des attributions logicielles et matériel"
-            },
-            {
+            "date": "2019 | 2 semaines",
+            "lieu": "Caisse Nationale d'Assurance Vieillesse",
+            "titre": "Stage 3ème - Découverte de l'entreprise",
+            "description": "Assistante gestionnaire de biens",
+            "type": "emploi",
+            "missions": [
+                "Assurer le suivi des attributions logicielles et matériel",
+                "Découvrir le monde de l'entreprise"
+            ]
+        },
+        {
             "id": "GGSB2",
             "date": "2019-2022",
-            "titre": "Baccalauréat Général",
-            "description": "Mention Bien\n Spécialités Mathématiques / Physique-Chimie / LLCER"
-            },
-            {
-            "id": "Sololearn",
-            "date": "2021 - 2023",
-            "titre": "Certifications Sololearn",
-            "description": "Cours de programmation en ligne",
-            "certifications": [
-                "Introduction C#",
-                "HTML",
-                "Responsive Web Design",
-                "C# Intermediare",
-                "CSS"
-            ]
-            },
-            {
+            "lieu": "Lycée Gasnier-Guy Sainte Bathilde",
+            "titre": "Baccalauréat Général | Mention bien ",
+            "description": "LV1 Anglais et Espagnol - Spécialités Mathématiques / Physique-Chimie / LLCER",
+            "type": "formation"
+        },
+        {
             "id": "BUT",
             "date": "2022 - 2025",
-            "titre": "BUT Informatique 2",
-            "description": "Parcours A : réalisation d'applications : conception, développement, validation"
-            },
-            {
+            "lieu": "IUT Gustave Eiffel",
+            "titre": "Bachelor Universitaire de Technologie - Informatique",
+            "description": "Parcours A : réalisation d'applications : conception, développement, validation. Major de promotion de 3ème année",
+            "type": "formation"
+        },
+        {
             "id": "Alternance",
-            "date": "2023 - 2025",
-            "titre": "Alternance Développeuse CNAV",
-            "description": "Développeuse au sein de l'équipe régionale d'Ile de France",
+            "date": "2023 - 2025 | 2 ans ",
+            "lieu": "Caisse Nationale d'Assurance Vieillesse",
+            "titre": "Alternance Développeuse C#",
+            "description": "Développeuse au sein de l'équipe régionale d'Ile de France et inter-Carsat",
+            "type": "emploi",
             "missions": [
-                "Développement SharePoint",
-                "Participation aux réunions d’équipe pour faire état de l’avancement de ses tâches",
-                "Être force de proposition",
-                "Suivre le mode de fonctionnement de l’entreprise"
+            "Développement et évolution d'applications C# avec le framework ASP .NET",
+            "Développement d'outils avec Power Apps et Power Automate",
+            "Participation aux réunions d’équipe pour faire la transmission d'informations",
+            "Animation des réunions avec le métier pour le maintien d'applications en conditions opérationnelles",
+            "Améliorer les performances des programmes dans des contextes contraints",
+            "Comprendre les dynamiques d'une DSI et d'une direction informatique"
             ]
-            }
-        ]
-    }
+        }
+    ]
 }

@@ -13,7 +13,6 @@ export const Header = () => {
             <a href="#Skills" className="hover:font-black">Compétences</a>
             <a href="#Projets" className="hover:font-black">Projets</a>
             <a href="#Formations" className="hover:font-black">Formations</a>
-            <a href="#Contact" className="hover:font-black">Contact</a>
             </nav>
             
             <button 
@@ -26,12 +25,11 @@ export const Header = () => {
         
         {/* Menu Mobile */}
         {isMenuOpen && (
-            <nav className="md:hidden bg-(--primary-500) py-4 px-6 space-y-2">
-            <a href="#Moi" className="block">A Propos</a>
-            <a href="#Skills" className="block">Compétences</a>
-            <a href="#Projets" className="block">Projets</a>
-            <a href="#Formations" className="block">Formations</a>
-            <a href="#Contact" className="block">Contact</a>
+            <nav className="md:hidden bg-(--primary-800) py-4 px-6 space-y-2">
+            <a href="#Moi" className="block" onClick={() => setIsMenuOpen(!isMenuOpen)}>A Propos</a>
+            <a href="#Skills" className="block" onClick={() => setIsMenuOpen(!isMenuOpen)}>Compétences</a>
+            <a href="#Projets" className="block" onClick={() => setIsMenuOpen(!isMenuOpen)}>Projets</a>
+            <a href="#Formations" className="block" onClick={() => setIsMenuOpen(!isMenuOpen)}>Formations</a>
             </nav>
         )}
         </header>

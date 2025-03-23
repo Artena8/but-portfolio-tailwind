@@ -1,0 +1,81 @@
+{
+    "competences": [
+        {
+            "titre": "Planification",
+            "description": "Gérer des projets",
+            "icon": "./icones8/plan.svg",
+            "competences": [
+                {"competence": "Méthode Agile", "pourcentage": 85},
+                {"competence": "Scrum", "pourcentage": 80},
+                {"competence": "Kanban", "pourcentage": 85},
+                {"competence": "Suite Atlassian", "pourcentage": 75},
+                {"competence": "Suite Office", "pourcentage": 70},
+                {"competence": "Microsoft Project", "pourcentage": 30},
+                {"competence": "Mantis Bug Tracker", "pourcentage": 40}
+            ]
+        },
+        {
+            "titre": "Développement Front-End",
+            "description": "Interaction Utilisateur",
+            "icon": "./icones8/frontend.svg",
+            "competences": [
+                {"competence": "HTML5", "pourcentage": 90},
+                {"competence": "CSS3", "pourcentage": 85},
+                {"competence": "JavaScript", "pourcentage": 75},
+                {"competence": "TypeScript (React)", "pourcentage": 75},
+                {"competence": "Tailwind", "pourcentage": 25},
+                {"competence": "Power Apps", "pourcentage": 50},
+                {"competence": "Power Automate", "pourcentage": 50}
+            ]
+        },
+        {
+            "titre": "Développement Back-End",
+            "description": "Fonctionnement du programme",
+            "icon": "./icones8/backend.svg",
+            "competences": [
+                {"competence": "PHP", "pourcentage": 80},
+                {"competence": "JAVA (IntelliJ / Eclipse)", "pourcentage": 70},
+                {"competence": "Python", "pourcentage": 85},
+                {"competence": "Django", "pourcentage": 30},
+                {"competence": "C#", "pourcentage": 80},
+                {"competence": "ASP .NET", "pourcentage": 70},
+                {"competence": "C", "pourcentage": 60}
+            ]
+        },
+        {
+            "titre": "Gestion des données",
+            "description": "Stocker et analyser les données",
+            "icon": "./icones8/data.svg",
+            "competences": [
+                {"competence": "SQL", "pourcentage": 85},
+                {"competence": "PostGreSQL", "pourcentage": 75},
+                {"competence": "MySQL", "pourcentage": 80},
+                {"competence": "MongoDB", "pourcentage": 70},
+                {"competence": "Power BI", "pourcentage": 25}
+            ]
+        },
+        {
+            "titre": "Système (DevOps)",
+            "description": "Intégrer les processus dans un projet",
+            "icon": "./icones8/pc.svg",
+            "competences": [
+                {"competence": "Linux", "pourcentage": 80},
+                {"competence": "Windows", "pourcentage": 75},
+                {"competence": "Visual Studio / Visual Studio Code", "pourcentage": 85},
+                {"competence": "Github", "pourcentage": 80},
+                {"competence": "SVN", "pourcentage": 70}
+            ]
+        },
+        {
+            "titre": "Design (UI/UX)",
+            "description": "Se créer un personal branding",
+            "icon": "./icones8/design.svg",
+            "competences": [
+                {"competence": "Figma", "pourcentage": 90},
+                {"competence": "SVGator", "pourcentage": 75},
+                {"competence": "Clip Paint Studio", "pourcentage": 60},
+                {"competence": "Illustrator", "pourcentage": 30}
+            ]
+        }
+    ]
+}

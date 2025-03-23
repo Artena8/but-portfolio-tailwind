@@ -1,20 +1,15 @@
 export type Competence = {
-    competence: string;
+    competence : string;
     pourcentage: number;
-}
+};
 
-export type Section = {
-    titre: string;
+export type Categorie = {
+    titre : string;
     description: string;
-    icon : string;
+    icon: string;
     competences: Competence[];
-}
+};
 
-export type JsonData = {
-    Planification: Section;
-    "FRONT END": Section;
-    "BACK-END": Section;
-    "GESTION DONNEES": Section;
-    DevOps: Section;
-    "UI UX": Section;
-}
+export type ListeCompetences = {
+    competences: Categorie[];
+};

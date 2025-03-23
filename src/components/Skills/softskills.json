@@ -1,0 +1,34 @@
+{
+    "competences": [
+        {
+            "titre": "Energique",
+            "description": "Je m'investis pleinement dans mes projets et je fais preuve d'une grande motivation",
+            "icon": "./icones8/energie.png"
+        },
+        {
+            "titre": "Engagée",
+            "description": "Je prends à cœur mes responsabilités et je m'assure de mener à bien les tâches qui me sont confiées",
+            "icon": "./icones8/engage.png"
+        },
+        {
+            "titre": "Organisée",
+            "description": "Je planifie et priorise efficacement mes tâches pour optimiser mon temps et atteindre mes objectifs",
+            "icon": "./icones8/organise.png"
+        },
+        {
+            "titre": "Créative",
+            "description": "Je cherche constamment de nouvelles idées et solutions pour résoudre les problèmes de manière innovante",
+            "icon": "./icones8/creativity.png"
+        },
+        {
+            "titre": "Esprit d'équipe",
+            "description": "Je travaille bien en équipe, en communiquant ouvertement pour atteindre nos objectifs communs.",
+            "icon": "./icones8/teamwork.png"
+        },
+        {
+            "titre": "Force de proposition",
+            "description": "Je prends l'initiative de suggérer des idées novatrices et des solutions pratiques pour améliorer les projets",
+            "icon": "./icones8/force.png"
+        }
+    ]
+}

@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ArrowUpIcon } from '@heroicons/react/24/solid';
 import networks from './networks.json';
 import { motion } from 'framer-motion';
 
-
 export const Footer: React.FC = () => {
-    const [socialLinks, setSocialLinks] = useState(networks.socialLinks);
     const currentYear = new Date().getFullYear();
 
     return (
@@ -22,7 +20,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className="flex justify-center space-x-8">
-                {socialLinks.map((link, index) => (
+                {networks.socialLinks.map((link, index) => (
                     <div key={index} className="group hover:scale-105 transition-transform duration-300">
                         <a
                             href={link.url}
@@ -46,6 +44,7 @@ export const Footer: React.FC = () => {
 
             <p className="text-center text-sm mt-8 text-gray-400 border-t-1 pt-2">
                 Copyright © {currentYear} - Héléna Chevalier - Tous droits réservés
+                <p>Crédits des icônes à <a className="underline" href="https://heroicons.com/" target="_blank">Heroicons</a> et <a className="underline" href="https://icons8.com/icons" target="_blank">Icons8</a></p>
             </p>
         </footer>
     );

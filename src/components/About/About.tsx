@@ -80,7 +80,7 @@ export const About: React.FC = () => {
                     transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                     <motion.div
-                        className="bg-white rounded-lg shadow-lg w-full max-w-md p-6 relative"
+                        className="bg-white rounded-lg shadow-lg w-full max-w-md p-6 fixed top-1/16"
                         initial={{ scale: 0.8 }}
                         animate={{ scale: 1 }}
                         exit={{ scale: 0.8 }}

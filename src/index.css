@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-lexend: "Lexend", sans-serif;
+  --font-secondary: "Red Hat Text", sans-serif;
 
   --primary-100: #864BD2;
   --primary-200: #7B3BCE;
@@ -37,7 +39,7 @@ body {
 }
 
 .background  {
-  background-image: url("./img/background2.jpg");
+  background-image: url("/img/background2.jpg");
   background-size: cover; 
   background-repeat: repeat ;
   background-clip: border-box;
@@ -47,6 +49,10 @@ h2 {
   font-weight: bolder;
   font-size: 3rem;
   color : var(--primary-700);
+}
+
+.headerfont {
+  font-family: var(--font-secondary);
 }
 
 @media (max-height: 800px) {

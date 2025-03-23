@@ -51,10 +51,22 @@ export const About: React.FC = () => {
                         </div>
                     </div>
                     <div className="hidden md:block md:w-1/3 lg:w-2/5 relative">
-                        <img
+                        <motion.img
                             src="./img/me.png"
                             alt="Héléna Chevalier"
-                            className="max-w-xs md:max-w-sm m-auto rounded-lg shadow-lg"
+                            width={"500px"}
+                            height={"500px"}
+                            className="max-w-xs md:max-w-sm m-auto rounded-lg shadow-lg moiImage"
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ duration: 0.3 }}
+                            onMouseOver={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.src = './img/meirl2.jpeg';
+                            }}
+                            onMouseOut={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.src = './img/me.png';
+                            }}
                         />
                     </div>
                 </div>

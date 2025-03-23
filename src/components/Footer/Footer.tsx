@@ -7,13 +7,13 @@ export const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-(--primary-800) text-white py-8">
+        <footer className="bg-(--primary-500) text-white py-8">
             <div className="flex justify-center mb-6">
                 <motion.a
                     href="#"
-                    className="text-xl hover:text-primary-500"
-                    whileHover={{ y: -5 }} // hover vers le haut
-                    transition={{ type: "spring", stiffness: 300 }} // RESORT TYPE
+                    className="text-xl"
+                    whileHover={{ y: -5 }}
+                    transition={{ type: "spring", stiffness: 300 }} // RESSORT TYPE
                 >
                     <ArrowUpIcon className="w-8 h-8 text-white transition-colors duration-300" />
                 </motion.a>
@@ -35,14 +35,14 @@ export const Footer: React.FC = () => {
                             />
                             <div className="text-sm">
                                 <div className="font-semibold">{link.name}</div>
-                                <div className="text-gray-400">{link.username}</div>
+                                <div className="text-gray-300">{link.username}</div>
                             </div>
                         </a>
                     </div>
                 ))}
             </div>
 
-            <p className="text-center text-sm mt-8 text-gray-400 border-t-1 pt-2">
+            <p className="text-center text-sm mt-8 text-gray-300 border-t-1 pt-2">
                 Copyright © {currentYear} - Héléna Chevalier - Tous droits réservés
                 <p>Crédits des icônes à <a className="underline" href="https://heroicons.com/" target="_blank">Heroicons</a> et <a className="underline" href="https://icons8.com/icons" target="_blank">Icons8</a></p>
             </p>

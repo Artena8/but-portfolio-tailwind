@@ -6,7 +6,7 @@ import { Footer } from './components/Footer'
 function App() {
 
   return (
-    <div className="bg-(--secondary-200)">
+    <div className='background'>
       <Header />
       <Main />
       <Footer />

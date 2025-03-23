@@ -5,7 +5,7 @@ import { Formations } from '../Formations';
 
 export const Main = () => {
     return (
-        <div className="contenu">
+        <div className="contenu backdrop-blur-lg">
             <About />
             <Skills />
             <Project />

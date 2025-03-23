@@ -24,7 +24,7 @@ export const About: React.FC = () => {
             <div className="container mx-auto px-6 relative flex flex-row min-h-screen">
                 <div className="w-full flex flex-row m-auto">
                     <div className="md:w-2/3 lg:w-3/5 flex flex-col relative z-20 w-full">
-                        <h1 className="pr-5 text-4xl md:text-6xl lg:text-8xl font-bold uppercase text-(--primary-500) flex flex-col">
+                        <h1 className="pr-5 text-4xl md:text-6xl lg:text-8xl font-bold uppercase text-(--primary-400) flex flex-col">
                             Héléna Chevalier
                         </h1>
                         <div className="animate-typing max-w-max overflow-hidden whitespace-nowrap border-r-4 border-r-(--primary-600) pr-5 text-2xl md:text-6xl lg:text-7l font-bold uppercase text-(--primary-600) flex flex-col">

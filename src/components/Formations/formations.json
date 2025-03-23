@@ -26,8 +26,11 @@
             "date": "2022 - 2025",
             "lieu": "IUT Gustave Eiffel",
             "titre": "Bachelor Universitaire de Technologie - Informatique",
-            "description": "Parcours A : réalisation d'applications : conception, développement, validation. Major de promotion de 3ème année",
-            "type": "formation"
+            "description": "Parcours A : réalisation d'applications : conception, développement, validation",
+            "type": "formation",
+            "missions": [
+                "Major de promotion de 3ème année"
+            ]
         },
         {
             "id": "Alternance",

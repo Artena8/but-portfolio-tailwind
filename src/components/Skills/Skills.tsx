@@ -39,7 +39,7 @@ export const Skills: React.FC = () => {
           {Object.keys(jsonData).map((key) => {
             const section = jsonData[key as keyof JsonData];
             return (
-              <div key={key} className="p-6 rounded-lg shadow-md border border-(--primary-500)">
+              <div key={key} className="p-6 rounded-lg shadow-md border border-(--primary-500) bg-(--secondary-100)">
                 <div className="flex items-center mb-4">
                   <img
                     src={section.icon}

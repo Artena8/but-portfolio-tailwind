@@ -16,15 +16,18 @@ export const Parcours = () => {
                 </span>
                 <h3 className="mb-1 text-lg font-semibold text-gray-900 ">{formation.titre}</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-(--secondary-600) ">{formation.date} | {formation.lieu}</time>
-                <p className="text-base font-normal text-gray-700 ">{formation.description}</p>
+                <div className='py-1 pr-1'>
+                <p className="text-base font-normal ">{formation.description}</p>
                 
                 {formation.missions && (
-                    <ul className="mt-2 text-sm text-gray-700 ">
+                    <ul className="mt-2 text-sm/6">
                         {formation.missions.map((mission, index) => (
                             <li key={index} className="list-disc ml-4">{mission}</li>
                         ))}
                     </ul>
                 )}
+                </div>
+
             </li>
         ))}
         </ol>

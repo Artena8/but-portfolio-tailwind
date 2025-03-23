@@ -14,7 +14,7 @@
   --primary-800: #231045;
   --primary-900: #130521;
 
-  --secondary-100: #FFF8F0;
+  --secondary-100: #F4EAFF;
   --secondary-200: #E4D8FD;
   --secondary-300: #D4C2FC;
   --secondary-400: #BB9EFA;
@@ -22,7 +22,7 @@
   --secondary-600: #8550FE;
   --secondary-700: #7540DE;
 
-  --dark-700 : #28262C;
+  --dark-700 : #2e1a30;
 }
 
 /* CSS PRINCIPAL */
@@ -34,6 +34,13 @@ html {
 body {
   font-family: var(--font-lexend);
   color : var(--dark-700);
+}
+
+.background  {
+  background-image: url("./img/background2.jpg");
+  background-size: cover; 
+  background-repeat: repeat ;
+  background-clip: border-box;
 }
 
 h2 {

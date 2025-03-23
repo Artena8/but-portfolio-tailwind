@@ -1,75 +1,159 @@
 {
-    "Mes Projets & Créations": {
-      "title": "Mes Projets & Créations",
-      "categories": {
+    "categories": {
         "Réaliser": {
           "title": "Réaliser",
           "projects": [
             {
-              "name": "SplaaatBall",
-              "link": "https://github.com/InkyYuu/Splaaatball",
-              "image": "./img/SPLAAATBALL.svg",
-              "tools": ["Python"],
-              "description": "Jeu 'Guerre de territoire' implémenté en python pour 2 joueurs en écran partagé. Placez vos pions de couleur pour recouvrir un maximum l'écran et gagner la partie !",
-              "skills": [
-                "Implémenter et Élaborer des conceptions simples",
-                "Tester une application et avoir un regard critique",
-                "Formaliser et implémenter des outils mathématiques en informatique"
-              ]
-            },
-            {
               "name": "BackPack Hero",
+              "date": "2023",
               "link": "https://github.com/InkyYuu/Backpack-Hero",
-              "image": "./img/Rat_Wolf.png",
-              "tools": ["Java - POO"],
-              "description": "Jeu roguelike ! Partez à l'aventure avec votre sac à dos pour parcourir le donjon en abattant les monstres avec vos différents trésors !",
+              "image": "./projet/projet.png",
+              "tools": ["Java"],
+              "description": "🎒🐭 Jeu roguelike ! Partez à l'aventure avec votre sac à dos pour parcourir le donjon en abattant les monstres avec vos différents trésors !",
               "skills": [
-                "Développer des interfaces utilisateurs",
-                "Implémenter et Élaborer des conceptions simples",
-                "Implémenter des conceptions Orienté Objet",
-                "Vérifier et valider la qualité de l’application par les tests"
+                {
+                  "competence": "Développer des interfaces utilisateurs",
+                  "value": 5
+                },
+                {
+                  "competence": "Implémenter et Élaborer des conceptions simples",
+                  "value": 5
+                },
+                {
+                  "competence": "Implémenter des conceptions Orienté Objet",
+                  "value": 5
+                },
+                {
+                  "competence": "Vérifier et valider la qualité de l’application par les tests",
+                  "value": 5
+                }
               ]
             },
             {
-              "name": "PimpMyPaid (En cours)",
-              "image": "./img/logorect.png",
+              "name": "PimpMyPaid",
+              "date": "2023",
+              "image": "./projet/projet.png",
+              "link": "https://github.com/FC-Rats/PimpMyPaids",
               "tools": ["PHP", "HTML", "CSS", "JS"],
-              "description": "PimpMyPaid un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
+              "description": "💳🏦 PimpMyPaid un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
               "skills": [
-                "Adopter de bonnes pratiques de conception et de programmation",
-                "Vérifier et valider la qualité de l’application par les tests",
-                "Définir et mettre en œuvre une démarche de suivi de projet",
-                "Appliquer une démarche pour intégrer une équipe informatique au sein d’une organisation"
+                {
+                  "competence": "Adopter de bonnes pratiques de conception et de programmation",
+                  "value": 5
+                },
+                {
+                  "competence": "Vérifier et valider la qualité de l’application par les tests",
+                  "value": 5
+                },
+                {
+                  "competence": "Définir et mettre en œuvre une démarche de suivi de projet",
+                  "value": 5
+                },
+                {
+                  "competence": "Appliquer une démarche pour intégrer une équipe informatique au sein d’une organisation",
+                  "value": 5
+                }
               ]
             },
             {
-              "name": "Links Awordkening : Where Words Unite (En cours)",
-              "image": "./img/saela.jpg",
-              "tools": ["C", "Java", "SQL", "HTML", "CSS", "PHP", "Python", "Node JS", "React", "TypeScript"],
-              "description": "Jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime…",
+              "name": "Links Awordkening : Where Words Unite",
+              "date": "2024",
+              "image": "./projet/projet.png",
+              "link": "https://github.com/FC-Rats/Links-Awordkening",
+              "tools": ["C", "Java", "SQL", "HTML", "CSS", "PHP", "Python", "React"],
+              "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
               "skills": [
-                "Élaborer et implémenter les spécifications fonctionnelles à partir des exigences",
-                "Choisir des structures de données complexes adaptées au problème",
-                "Concevoir et développer des applications communicantes",
-                "Formaliser les besoins du client et de l’utilisateur",
-                "Définir et mettre en œuvre une démarche de suivi de projet"
+                {
+                  "competence": "Élaborer et implémenter les spécifications fonctionnelles à partir des exigences",
+                  "value": 5
+                },
+                {
+                  "competence": "Choisir des structures de données complexes adaptées au problème",
+                  "value": 5
+                },
+                {
+                  "competence": "Concevoir et développer des applications communicantes",
+                  "value": 5
+                },
+                {
+                  "competence": "Formaliser les besoins du client et de l’utilisateur",
+                  "value": 5
+                },
+                {
+                  "competence": "Définir et mettre en œuvre une démarche de suivi de projet",
+                  "value": 5
+                }
+              ]
+            },
+            {
+              "name": "ChillZone - Mon IUT",
+              "date": "2025",
+              "link": "https://github.com/FC-Zen/ChillZone",
+              "image": "./projet/projet.png",
+              "tools": ["React", "React Native", "Django"],
+              "description": "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
+              "skills": [
+                {
+                  "competence": "Choisir et implémenter les architectures adaptées",
+                  "value": 5
+                },
+                {
+                  "competence": "Faire évoluer une application existante",
+                  "value": 5
+                },
+                {
+                  "competence": "Intégrer des solutions dans un environnement de production",
+                  "value": 5
+                }
               ]
             }
           ]
-        },
+        },      
         "Optimiser": {
           "title": "Optimiser",
           "projects": [
             {
-              "name": "Graphes & Automates",
-              "link": "https://github.com/InkyYuu/Graphes",
-              "image": "./img/grahes.png",
+              "name": "SplaaatBall",
+              "date": "2022",
+              "link": "https://github.com/InkyYuu/Splaaatball",
+              "image": "./projet/projet.png",
               "tools": ["Python"],
-              "description": "Exploration algorithmique d'un programme avec les graphes : Implémentation des différents algorithmes de graphes en python.",
+              "description": "🎮🔵 Jeu \"Guerre de territoire\" implémenté en python pour 2 joueurs. Placez vos pions de couleur pour recouvrir un maximum l'écran et gagner la partie !",
               "skills": [
-                "Analyser un problème avec méthode",
-                "Comparer des algorithmes pour des problèmes classiques",
-                "Formaliser et implémenter des outils mathématiques en informatique"
+                {
+                  "competence": "Implémenter et Élaborer des conceptions simples",
+                  "value": 5
+                },
+                {
+                  "competence": "Tester une application et avoir un regard critique",
+                  "value": 5
+                },
+                {
+                  "competence": "Formaliser et implémenter des outils mathématiques en informatique",
+                  "value": 5
+                }
+              ]
+            },
+            {
+              "name": "Graphes & Automates",
+              "date": "2023",
+              "link": "https://github.com/InkyYuu/Graphes",
+              "image": "./projet/projet.png",
+              "tools": ["Python"],
+              "description": "🖥🔍 Exploration algorithmique d'un programme avec les graphes : Implémentation des différents algorithmes de graphes en python.",
+              "skills": [
+                {
+                  "competence": "AC12.1 - Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données...)",
+                  "value": 5
+                },
+                {
+                  "competence": "AC12.2 - Comparer des algorithmes pour des problèmes classiques (tris simples, recherche...)",
+                  "value": 5
+                },
+                {
+                  "competence": "Formaliser et mettre en œuvre des outils mathématiques pour l'informatique",
+                  "value": 5
+                }
               ]
             }
           ]
@@ -78,10 +162,27 @@
           "title": "Administrer",
           "projects": [
             {
-              "name": "Coming soon (En cours)",
-              "image": "./img/carre.jpg",
-              "tools": [],
-              "description": "Un projet de serveur est en cours ! Revenez vite pour en savoir plus."
+              "name": "Links Awordkening - Serveurs",
+              "date": "2024",
+              "image": "./projet/projet.png",
+              "link": "https://github.com/FC-Rats/Links-Awordkening",
+              "projectLogo": "Assets/img/project/la/la-icone.ico",
+              "tools": ["Serveur", "Docker"],
+              "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
+              "skills": [
+                {
+                  "competence": "AC23.1 - Concevoir et développer des applications communicantes",
+                  "value": 5
+                },
+                {
+                  "competence": "AC23.2 - Utiliser des serveurs et des services réseaux virtualisés",
+                  "value": 5
+                },
+                {
+                  "competence": "AC23.3 - Sécuriser les services et données d'un système",
+                  "value": 5
+                }
+              ]
             }
           ]
         },
@@ -89,75 +190,194 @@
           "title": "Gérer",
           "projects": [
             {
-              "name": "Daktari (Reupload en cours)",
-              "image": "./img/veterinaire-medecine.jpg",
-              "tools": ["PostGreSQL", "HTML", "PHP"],
-              "description": "Création d’une base de donnée pour un professionnel (fictif) à partir d’un cahier des charges.",
+              "name": "Links Awordkening : Where Words Unite",
+              "date": "2024",
+              "image": "./projet/projet.png",
+              "link": "https://github.com/FC-Rats/Links-Awordkening",
+              "tools": ["PHP", "SQL"],
+              "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
               "skills": [
-                "Concevoir une base de données relationnelle à partir d’un cahier des charges",
-                "Mettre à jour et interroger une base de données relationnelle",
-                "Visualiser des données"
+                {
+                  "competence": "AC24.1 - Optimiser les modèles de données de l'entreprise",
+                  "value": 5
+                },
+                {
+                  "competence": "AC24.2 - Assurer la sécurité des données (intégrité et confidentialité)",
+                  "value": 5
+                },
+                {
+                  "competence": "AC24.3 - Organiser la restitution de données à travers la programmation et la visualisation",
+                  "value": 5
+                },
+                {
+                  "competence": "AC24.4 - Manipuler des données hétérogènes",
+                  "value": 5
+                }
+              ]
+            },
+            {
+              "name": "Tableau de Bord : Contrôles de la CNIL",
+              "date": "2024",
+              "image": "./projet/projet.png",
+              "link": "https://github.com/FC-Rats/Links-Awordkening",
+              "tools": ["PHP", "SQL", "Python"],
+              "description": "👁️🛰️​ Création d'un tableau de bord pour synthétiser les données des contrôles de la CNIL sur 5 ans.",
+              "skills": [
+                {
+                  "competence": "AC24.1 - Optimiser les modèles de données de l'entreprise",
+                  "value": 5
+                },
+                {
+                  "competence": "AC24.2 - Assurer la sécurité des données (intégrité et confidentialité)",
+                  "value": 5
+                },
+                {
+                  "competence": "AC24.3 - Organiser la restitution de données à travers la programmation et la visualisation",
+                  "value": 5
+                },
+                {
+                  "competence": "AC24.4 - Manipuler des données hétérogènes",
+                  "value": 5
+                }
               ]
             }
           ]
-        },
+        },      
+        "Conduire": {
+          "title": "Conduire",
+          "projects": [
+            {
+              "name": "PimpMyPaid",
+              "date": "2023",
+              "image": "./projet/projet.png",
+              "link": "https://github.com/FC-Rats/PimpMyPaids",
+              "tools": ["Jira"],
+              "description": "💳🏦 PimpMyPaid un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
+              "skills": [
+                {
+                  "competence": "AC25.1 - Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information",
+                  "value": 3
+                },
+                {
+                  "competence": "AC25.2 - Formaliser les besoins du client et de l'utilisateur",
+                  "value": 5
+                },
+                {
+                  "competence": "AC25.3 - Identifier les critères de faisabilité d'un projet informatique",
+                  "value": 5
+                },
+                {
+                  "competence": "AC25.4 - Définir et mettre en œuvre une démarche de suivi de projet",
+                  "value": 5
+                }
+              ]
+            },
+            {
+              "name": "Links Awordkening : Where Words Unite",
+              "date": "2024",
+              "image": "./projet/projet.png",
+              "link": "https://github.com/FC-Rats/Links-Awordkening",
+              "tools": ["Jira", "Confluence", "Suite Office"],
+              "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
+              "skills": [
+                {
+                  "competence": "Élaborer et implémenter les spécifications fonctionnelles à partir des exigences",
+                  "value": 4
+                },
+                {
+                  "competence": "Choisir des structures de données complexes adaptées au problème",
+                  "value": 4
+                },
+                {
+                  "competence": "Concevoir et développer des applications communicantes",
+                  "value": 5
+                },
+                {
+                  "competence": "Formaliser les besoins du client et de l’utilisateur",
+                  "value": 5
+                },
+                {
+                  "competence": "Définir et mettre en œuvre une démarche de suivi de projet",
+                  "value": 5
+                }
+              ]
+            },
+            {
+              "name": "ChillZone - Mon IUT",
+              "date": "2025",
+              "link": "https://github.com/FC-Zen/ChillZone",
+              "image": "./projet/projet.png",
+              "tools": ["Jira", "Confluence", "Suite Office"],
+              "description": "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
+              "skills": [
+                {
+                  "competence": "Choisir et implémenter les architectures adaptées",
+                  "value": 5
+                },
+                {
+                  "competence": "Faire évoluer une application existante",
+                  "value": 4
+                },
+                {
+                  "competence": "Intégrer des solutions dans un environnement de production",
+                  "value": 5
+                }
+              ]
+            }
+          ]
+        },    
         "Collaborer": {
           "title": "Collaborer",
           "projects": [
             {
               "name": "Site Web Grenade",
-              "link": "http://perso-etudiant.u-pem.fr/~helena.chevalier/unesco/accueil.php",
-              "image": "./img/UNESCO.png",
+              "link": "https://github.com/FC-FLEM/SAE-UNESCO-RENDU-1",
+              "image": "./projet/projet.png",
+              "date": "2023",
               "tools": ["HTML", "CSS", "PHP", "JS"],
-              "description": "Site web réalisé pour une projet de revalorisation de l'UNESCO sur la péninsule ibérique.",
+              "description": "🌏🔍​ Site web réalisé pour une projet de revalorisation de l'UNESCO sur la péninsule ibérique.",
               "skills": [
-                "Appréhender les besoins du client et de l’utilisateur",
-                "Identifier les acteurs et les différentes phases d’un cycle de développement",
-                "Acquérir les compétences interpersonnelles pour travailler en équipe"
+                {
+                  "competence": "Appréhender les besoins du client et de l’utilisateur",
+                  "value": 3
+                },
+                {
+                  "competence": "Identifier les acteurs et les différentes phases d’un cycle de développement",
+                  "value": 4
+                },
+                {
+                  "competence": "Acquérir les compétences interpersonnelles pour travailler en équipe",
+                  "value": 5
+                }
               ]
             },
             {
-              "name": "BricoBoulot",
-              "link": "https://www.figma.com/proto/CGwj66Bzs87QX8I2Wv5KkE/APP-UNESCO?type=design&node-id=18-4&t=zurdSeSRyZlQGZo6-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=63%3A54&show-proto-sidebar=1",
-              "image": "./img/Bricoboulot.png",
-              "tools": ["Figma"],
-              "description": "Maquettage avec Figma d'une application pour aider les bricoleurs dans leurs projets depuis leur téléphone (Projet de IHM à 4 personnes).",
-              "skills": [
-                "Mettre en place les outils de gestion de projet",
-                "Concevoir des interfaces utilisateurs",
-                "Comprendre le modèle IHM"
-              ]
-            },
-            {
-              "name": "Caminar",
-              "link": "https://www.figma.com/proto/CGwj66Bzs87QX8I2Wv5KkE/APP-UNESCO?type=design&node-id=18-4&t=zurdSeSRyZlQGZo6-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=63%3A54&show-proto-sidebar=1",
-              "image": "./img/Caminar.png",
-              "tools": ["Figma"],
-              "description": "Maquettage d'une application en lien avec le projet pour l'UNESCO. Le but de l'application est de permettre de se balader dans Grenade de manière interactive.",
-              "skills": [
-                "Concevoir des interfaces utilisateurs",
-                "Chercher à optimiser l’ergonomie et l’accessibilité"
-              ]
-            }
-          ]
-        },
-        "Compta 101": {
-          "title": "Compta 101",
-          "projects": [
-            {
-              "name": "Compta 101",
-              "link": "https://github.com/Artena8/Compta101",
-              "image": "./img/compta.avif",
+              "name": "Script Comptabilité",
+              "date": "2023",
+              "link": "https://github.com/InkyYuu/Comptabilite",
+              "image": "./projet/projet.png",
               "tools": ["Python"],
-              "description": "Programmes python pour calculer le taux linéaire, le taux dégressif et faire la balance. Le code est à peu près formaté pour un affichage propre sur calculatrice.",
+              "description": "📈🧮 Programmes python pour calculer le taux linéaire, le taux dégressif et faire la balance. Le code est à peu près formaté pour un affichage propre sur calculatrice. Projet à initiative personnelle en duo avec Helena Chevalier.",
               "skills": [
-                "Appréhender les besoins du client et de l’utilisateur",
-                "Implémenter des concepts simples"
+                {
+                  "competence": "Appréhender l'écosystème numérique",
+                  "value": 3
+                },
+                {
+                  "competence": "Découvrir les aptitudes requises selon les différents secteurs informatiques",
+                  "value": 4
+                },
+                {
+                  "competence": "Identifier les statuts, les fonctions et les rôles de chaque membre d'une équipe pluridisciplinaire",
+                  "value": 5
+                },
+                {
+                  "competence": "Acquérir les compétences interpersonnelles pour travailler en équipe",
+                  "value": 5
+                }
               ]
             }
           ]
         }
       }
-    }
-  }
-  
+}

@@ -9,27 +9,6 @@
             "type" : "civique"
         },
         {
-            "id": "TOEIC",
-            "date": "2025",
-            "titre": "TOEIC - EN COURS",
-            "source": "ETS Global",
-            "type" : "langue"
-        },
-        {
-            "id": "PIX",
-            "date": "2019 / 2025",
-            "titre": "Certification (PIX Novice 2) - EN COURS",
-            "source": "PIX",
-            "type" : "code"
-        },
-        {
-            "id": "Permis",
-            "date": "2025",
-            "titre": "Permis de conduire B",
-            "source": "En cours",
-            "type" : "civique"
-        },
-        {
             "id": "Sololearn_C#1",
             "date": "2023",
             "titre": "Introduction C#",
@@ -42,6 +21,27 @@
             "titre": "C# Intermédiaire",
             "source": "Sololearn",
             "type" : "code"
+        },
+        {
+            "id": "PIX",
+            "date": "2019 / 2025",
+            "titre": "Certification (PIX Novice 2) - EN COURS",
+            "source": "PIX",
+            "type" : "code"
+        },
+        {
+            "id": "TOEIC",
+            "date": "2025",
+            "titre": "TOEIC - EN COURS",
+            "source": "ETS Global",
+            "type" : "langue"
+        },
+        {
+            "id": "Permis",
+            "date": "2025",
+            "titre": "Permis de conduire B",
+            "source": "En cours",
+            "type" : "civique"
         }
     ]
 }  

@@ -7,7 +7,7 @@
               "name": "BackPack Hero",
               "date": "2023",
               "link": "https://github.com/InkyYuu/Backpack-Hero",
-              "image": "./projet/projet.png",
+              "image": "./projet/bckphero.png",
               "tools": ["Java"],
               "description": "🎒🐭 Jeu roguelike ! Partez à l'aventure avec votre sac à dos pour parcourir le donjon en abattant les monstres avec vos différents trésors !",
               "skills": [
@@ -32,7 +32,7 @@
             {
               "name": "PimpMyPaid",
               "date": "2023",
-              "image": "./projet/projet.png",
+              "image": "./projet/pmp.png",
               "link": "https://github.com/FC-Rats/PimpMyPaids",
               "tools": ["PHP", "HTML", "CSS", "JS"],
               "description": "💳🏦 PimpMyPaid un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
@@ -58,7 +58,7 @@
             {
               "name": "Links Awordkening : Where Words Unite",
               "date": "2024",
-              "image": "./projet/projet.png",
+              "image": "./projet/lalogo.png",
               "link": "https://github.com/FC-Rats/Links-Awordkening",
               "tools": ["C", "Java", "SQL", "HTML", "CSS", "PHP", "Python", "React"],
               "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
@@ -89,7 +89,7 @@
               "name": "ChillZone - Mon IUT",
               "date": "2025",
               "link": "https://github.com/FC-Zen/ChillZone",
-              "image": "./projet/projet.png",
+              "image": "./projet/logo-IUT.png",
               "tools": ["React", "React Native", "Django"],
               "description": "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
               "skills": [
@@ -116,7 +116,7 @@
               "name": "SplaaatBall",
               "date": "2022",
               "link": "https://github.com/InkyYuu/Splaaatball",
-              "image": "./projet/projet.png",
+              "image": "./projet/splaaatball.png",
               "tools": ["Python"],
               "description": "🎮🔵 Jeu \"Guerre de territoire\" implémenté en python pour 2 joueurs. Placez vos pions de couleur pour recouvrir un maximum l'écran et gagner la partie !",
               "skills": [
@@ -138,7 +138,7 @@
               "name": "Graphes & Automates",
               "date": "2023",
               "link": "https://github.com/InkyYuu/Graphes",
-              "image": "./projet/projet.png",
+              "image": "./projet/automate.svg",
               "tools": ["Python"],
               "description": "🖥🔍 Exploration algorithmique d'un programme avec les graphes : Implémentation des différents algorithmes de graphes en python.",
               "skills": [
@@ -164,7 +164,7 @@
             {
               "name": "Links Awordkening - Serveurs",
               "date": "2024",
-              "image": "./projet/projet.png",
+              "image": "./projet/lalogo.png",
               "link": "https://github.com/FC-Rats/Links-Awordkening",
               "projectLogo": "Assets/img/project/la/la-icone.ico",
               "tools": ["Serveur", "Docker"],
@@ -192,7 +192,7 @@
             {
               "name": "Links Awordkening : Where Words Unite",
               "date": "2024",
-              "image": "./projet/projet.png",
+              "image": "./projet/lalogo.png",
               "link": "https://github.com/FC-Rats/Links-Awordkening",
               "tools": ["PHP", "SQL"],
               "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
@@ -218,7 +218,7 @@
             {
               "name": "Tableau de Bord : Contrôles de la CNIL",
               "date": "2024",
-              "image": "./projet/projet.png",
+              "image": "./projet/Cnil.png",
               "link": "https://github.com/FC-Rats/Links-Awordkening",
               "tools": ["PHP", "SQL", "Python"],
               "description": "👁️🛰️​ Création d'un tableau de bord pour synthétiser les données des contrôles de la CNIL sur 5 ans.",
@@ -249,7 +249,7 @@
             {
               "name": "PimpMyPaid",
               "date": "2023",
-              "image": "./projet/projet.png",
+              "image": "./projet/pmp.png",
               "link": "https://github.com/FC-Rats/PimpMyPaids",
               "tools": ["Jira"],
               "description": "💳🏦 PimpMyPaid un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
@@ -275,7 +275,7 @@
             {
               "name": "Links Awordkening : Where Words Unite",
               "date": "2024",
-              "image": "./projet/projet.png",
+              "image": "./projet/lalogo.png",
               "link": "https://github.com/FC-Rats/Links-Awordkening",
               "tools": ["Jira", "Confluence", "Suite Office"],
               "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
@@ -306,7 +306,7 @@
               "name": "ChillZone - Mon IUT",
               "date": "2025",
               "link": "https://github.com/FC-Zen/ChillZone",
-              "image": "./projet/projet.png",
+              "image": "./projet/logo-IUT.png",
               "tools": ["Jira", "Confluence", "Suite Office"],
               "description": "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
               "skills": [
@@ -332,7 +332,7 @@
             {
               "name": "Site Web Grenade",
               "link": "https://github.com/FC-FLEM/SAE-UNESCO-RENDU-1",
-              "image": "./projet/projet.png",
+              "image": "./projet/FCFLEM.png",
               "date": "2023",
               "tools": ["HTML", "CSS", "PHP", "JS"],
               "description": "🌏🔍​ Site web réalisé pour une projet de revalorisation de l'UNESCO sur la péninsule ibérique.",
@@ -355,7 +355,7 @@
               "name": "Script Comptabilité",
               "date": "2023",
               "link": "https://github.com/InkyYuu/Comptabilite",
-              "image": "./projet/projet.png",
+              "image": "./projet/compta.png",
               "tools": ["Python"],
               "description": "📈🧮 Programmes python pour calculer le taux linéaire, le taux dégressif et faire la balance. Le code est à peu près formaté pour un affichage propre sur calculatrice. Projet à initiative personnelle en duo avec Helena Chevalier.",
               "skills": [

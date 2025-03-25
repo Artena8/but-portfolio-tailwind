@@ -8,7 +8,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
                 <img 
                     src={project.image || "/default-image.jpg"}
                     alt={project.name}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-contain p-4"
                 />
             )}
 

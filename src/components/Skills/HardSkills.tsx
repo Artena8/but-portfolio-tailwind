@@ -11,7 +11,7 @@ export const HardSkills: React.FC = () => {
             Mes Langages & Outils
 
             <label className={`inline-flex items-center justify-between mx-4 px-2 cursor-pointer transition-colors
-                text-(--secondary-600)  border-2  rounded-lg 
+                text-(--secondary-600)  border-2  rounded-lg tw-border-solid
                 ${hovered === "all" ? "bg-(--primary-500) border-(--primary-500) text-white" : 
                 "hover:text-(--secondary-700) hover:border-(--secondary-700) bg-(--secondary-200) border-(--secondary-600)"}
             `}>                           
@@ -33,7 +33,7 @@ export const HardSkills: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {jsonData.competences.map((section, key) => {
                 return (
-                <div key={key} className="p-6 rounded-lg shadow-md border border-(--primary-500) bg-(--secondary-100)">
+                <div key={key} className="p-6 rounded-lg shadow-md border border-(--primary-500) bg-(--secondary-100) tw-border-solid">
                     <div className="flex items-center mb-4">
                     <img
                         src={section.icon}

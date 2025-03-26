@@ -5,7 +5,7 @@ export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="fixed top-1 rounded-2xl left-1/2 transform -translate-x-1/2 w-full lg:w-4/5 bg-(--primary-500) text-white py-4 z-50 m-auto">
+        <header className="fixed top-1 rounded-2xl left-1/2 navfx transform -translate-x-1/2 w-full lg:w-4/5 bg-(--primary-500) text-white py-4 z-50 m-auto">
         <div className="container mx-auto flex justify-between items-center px-6">
             <h3 className="text-xl flex items-center gap-2">
             <img src="./HC.svg" width={"32px"} alt="Logo" />

@@ -27,7 +27,7 @@ export const About: React.FC = () => {
                         <h1 className="pr-5 text-4xl md:text-6xl lg:text-8xl font-bold uppercase text-(--primary-400) flex flex-col">
                             Héléna Chevalier
                         </h1>
-                        <div className="animate-typing max-w-max overflow-hidden whitespace-nowrap border-r-4 border-r-(--primary-600) pr-5 text-2xl md:text-6xl lg:text-7l font-bold uppercase text-(--primary-600) flex flex-col">
+                        <div className="animate-typing max-w-max overflow-hidden whitespace-nowrap border-r-4 border-r-(--primary-600) tw-border-solid pr-5 text-2xl md:text-6xl lg:text-7l font-bold uppercase text-(--primary-600) flex flex-col">
                             Développeuse
                         </div>
 
@@ -44,7 +44,7 @@ export const About: React.FC = () => {
                             </a>
                             <button
                                 onClick={() => setIsModalOpen(true)}
-                                className="cursor-pointer uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-(--primary-500) text-(--primary-500) text-md hover:border-(--primary-700) hover:text-(--primary-700)"
+                                className="cursor-pointer uppercase py-2 px-4 rounded-lg bg-transparent tw-border-solid border-2 border-(--primary-500) text-(--primary-500) text-md hover:border-(--primary-700) hover:text-(--primary-700)"
                             >
                                 Contactez-moi
                             </button>
@@ -98,7 +98,7 @@ export const About: React.FC = () => {
                         exit={{ scale: 0.8 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <div className="flex items-center justify-between border-b pb-3">
+                        <div className="flex items-center justify-between border-b tw-border-solid pb-3">
                             <div>
                                 <h3 className="text-xl font-semibold text-(--primary-500)">Contactez-moi !</h3>
                                 <p>N'hésitez pas à m'envoyer un message par ce formulaire ou via mes réseaux sociaux</p>
@@ -119,7 +119,7 @@ export const About: React.FC = () => {
                                 </label>
                                 <input
                                     type="email"
-                                    className="mt-1 block w-full border border-gray-300 rounded-lg p-2"
+                                    className="mt-1 block w-full border border-gray-300 tw-border-solid rounded-lg p-2"
                                     required
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
@@ -128,7 +128,7 @@ export const About: React.FC = () => {
                             <div>
                                 <label className="block text-sm font-medium text-gray-700">Votre message : </label>
                                 <textarea
-                                    className="mt-1 block w-full border border-gray-300 rounded-lg p-2"
+                                    className="mt-1 block w-full border border-gray-300 tw-border-solid rounded-lg p-2"
                                     required
                                     rows={5}
                                     value={message}

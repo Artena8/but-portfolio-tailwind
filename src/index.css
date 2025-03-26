@@ -55,6 +55,11 @@ h2 {
   font-family: var(--font-secondary);
 }
 
+.navfx {
+  -moz-transform: translate(-50%,0);
+}
+
+
 @media (max-height: 800px) {
   .mt-custom {
     margin-top: -10vh;

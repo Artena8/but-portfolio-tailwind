@@ -10,7 +10,7 @@ export const SoftSkills: React.FC = () => {
             <div className="flex flex-wrap gap-5 justify-center items-center">
                 {JsonData.competences.map((category, index) => (
                 <div key={index} className="px-12 text-center sm:px-0 w-full sm:w-1/2 lg:w-1/4">
-                    <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 rounded-full bg-(--secondary-100) ring-3 sm:w-16 sm:h-16">
+                    <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 rounded-full bg-(--secondary-100) ring-3 sm:w-16 sm:h-16 tw-border-solid">
                     <img
                         src={category.icon}
                         alt={category.titre}

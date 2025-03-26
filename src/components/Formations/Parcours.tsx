@@ -4,7 +4,7 @@ import { AcademicCapIcon, BriefcaseIcon } from '@heroicons/react/24/solid';
 
 export const Parcours = () => {
     return (
-        <ol className="mx-8 relative border-s border-(--primary-500)">
+        <ol className="mx-8 relative border-s border-(--primary-500) tw-border-solid">
         {formationsData.items.map((formation) => (
             <li key={formation.id} className="mb-10 ms-6">
                 <span className="absolute flex items-center justify-center w-8 h-8 bg-(--secondary-300) rounded-full -start-4 ">

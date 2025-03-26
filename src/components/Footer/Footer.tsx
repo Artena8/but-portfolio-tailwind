@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
                 ))}
             </div>
 
-            <p className="text-center text-sm mt-8 text-gray-300 border-t-1 pt-2">
+            <p className="text-center text-sm mt-8 text-gray-300 border-t-1 pt-2 tw-border-solid">
                 Copyright © {currentYear} - Héléna Chevalier - Tous droits réservés
                 <p>Crédits des icônes à <a className="underline" href="https://heroicons.com/" target="_blank">Heroicons</a> et <a className="underline" href="https://icons8.com/icons" target="_blank">Icons8</a></p>
             </p>

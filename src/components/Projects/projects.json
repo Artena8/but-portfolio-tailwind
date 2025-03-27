@@ -89,7 +89,7 @@
               "name": "ChillZone - Mon IUT",
               "date": "2025",
               "link": "https://github.com/FC-Zen/ChillZone",
-              "image": "./projet/logo-IUT.png",
+              "image": "./projet/logoIUT.svg",
               "tools": ["React", "React Native", "Django"],
               "description": "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
               "skills": [
@@ -306,7 +306,7 @@
               "name": "ChillZone - Mon IUT",
               "date": "2025",
               "link": "https://github.com/FC-Zen/ChillZone",
-              "image": "./projet/logo-IUT.png",
+              "image": "./projet/logoIUT.svg",
               "tools": ["Jira", "Confluence", "Suite Office"],
               "description": "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
               "skills": [

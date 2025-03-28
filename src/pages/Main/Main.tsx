@@ -1,23 +1,18 @@
 import { useEffect } from "react";
 import { About, Footer, Formations, Header, Projects, Skills } from "../../components";
+import { useLocation } from "react-router-dom";
 
 export const Main = () => {
+    const { hash } = useLocation();
+
     useEffect(() => {
-        const handleScrollToHash = () => {
-            const hash = window.location.hash;
-            if (hash) {
-                const element = document.querySelector(hash);
-                if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                }
-            }
-        };
-        handleScrollToHash();
-        window.addEventListener("hashchange", handleScrollToHash);
-        return () => {
-            window.removeEventListener("hashchange", handleScrollToHash);
-        };
-    }, []);
+        if (hash) {
+        const element = document.getElementById(hash.replace("#", ""));
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+        }
+    }, [hash]);
 
     return (
         <div className='background'>

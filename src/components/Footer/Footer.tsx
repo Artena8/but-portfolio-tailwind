@@ -50,7 +50,10 @@ export const Footer: React.FC = () => {
 
             <p className="text-center text-sm mt-8 text-gray-300 border-t-1 pt-2 tw-border-solid">
                 Copyright © {currentYear} - Héléna Chevalier - Tous droits réservés 
-                <p><Link to="/" className="underline"><span>Page Principale</span></Link> - <Link to="/mentions-legales" className="underline"><span>Mentions Légales</span></Link></p>
+                <p><Link   to="/" className="underline" onClick={(e) => {
+                e.preventDefault();
+                window.location.replace("https://artena8.github.io/but-portfolio-tailwind/");}}>
+                <span>Page Principale</span></Link> - <Link to="/mentions-legales" className="underline"><span>Mentions Légales</span></Link></p>
             </p>
         </footer>
     );

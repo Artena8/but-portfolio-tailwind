@@ -1,7 +1,7 @@
 import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Project } from "../../types";
-import { ChevronLeftIcon, StarIcon } from "@heroicons/react/20/solid"; // Importation de l'icône étoile de Heroicons
+import { ChevronLeftIcon, StarIcon } from "@heroicons/react/20/solid";
 
 export const ProjectDetails = () => {
     const location = useLocation();
@@ -27,7 +27,7 @@ export const ProjectDetails = () => {
                 <div className="flex flex-col lg:flex-row">
                     {project.image && (
                         <img
-                            src={project.image ? `${import.meta.env.VITE_PUBLIC_URL}/${project.image}` : "/default-image.jpg"} 
+                            src={project.image ? `${import.meta.env.BASE_URL}/${project.image}` : "/default-image.jpg"} 
                             alt={project.name}
                             className="w-full lg:w-1/3 h-auto object-contain p-4"
                         />

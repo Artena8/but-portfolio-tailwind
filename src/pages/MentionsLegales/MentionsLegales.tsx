@@ -21,6 +21,8 @@ export const MentionsLegales = () => {
                     <h1 className="text-2xl font-bold text-gray-800 mt-6 mb-4">Propriété intellectuelle</h1>
                     <p className="text-gray-600 mb-2">Le contenu de ce portfolio, incluant les textes, images, logos, et autres éléments visuels, sont la propriété de Héléna Chevalier, sauf mention contraire.</p>
                     <p className="text-gray-600 mb-2">Les icônes proviennent de <a className="underline" href="https://heroicons.com/" target="_blank">Heroicons</a> et <a className="underline" href="https://icons8.com/icons" target="_blank">Icons8</a>.</p>
+                    <p className="text-gray-600 mb-2">Le design utilise le framework Tailwind CSS sous licence MIT.</p>
+                    <p className="text-gray-600 mb-2">Ce projet utilise React, Vite, et Yarn, tous sous licences open-source.</p>
 
                     <h1 className="text-2xl font-bold text-gray-800 mt-6 mb-4">Protection des données personnelles</h1>
                     <p className="text-gray-600 mb-2">Ce site ne collecte aucune donnée personnelle, à l'exception des informations fournies par l'utilisateur via le formulaire de contact. Ces informations ne sont pas sauvegardées dans une base de données et ne sont utilisées que dans le cadre de la réponse aux demandes de contact.</p>

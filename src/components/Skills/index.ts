@@ -1,2 +1,2 @@
 export { Skills } from './Skills';
-export type {Competence, Section, JsonData} from './SkillTypes';
+export type {Competence} from './SkillTypes';

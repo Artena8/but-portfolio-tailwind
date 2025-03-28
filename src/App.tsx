@@ -1,17 +1,16 @@
-import './index.css'
-import { Header } from './components/Header'
-import { Main } from './components/Main'
-import { Footer } from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Main, MentionsLegales } from './pages';
+import { useEffect } from 'react';
 
 function App() {
-
   return (
-    <div className='background'>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  )
+    <Router basename="/but-portfolio-tailwind/">
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/mentions-legales" element={<MentionsLegales />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

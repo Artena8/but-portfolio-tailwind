@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ArrowUpIcon } from '@heroicons/react/24/solid';
 import networks from './networks.json';
 import { motion } from 'framer-motion';
+import { Link, useLocation } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
+    const location = useLocation();
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location])
+    
     return (
         <footer className="bg-(--primary-500) text-white py-8">
             <div className="flex justify-center mb-6">
@@ -43,8 +49,8 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-center text-sm mt-8 text-gray-300 border-t-1 pt-2 tw-border-solid">
-                Copyright © {currentYear} - Héléna Chevalier - Tous droits réservés
-                <p>Crédits des icônes à <a className="underline" href="https://heroicons.com/" target="_blank">Heroicons</a> et <a className="underline" href="https://icons8.com/icons" target="_blank">Icons8</a></p>
+                Copyright © {currentYear} - Héléna Chevalier - Tous droits réservés 
+                <p><Link to="/" className="underline"><span>Page Principale</span></Link> - <Link to="/mentions-legales" className="underline"><span>Mentions Légales</span></Link></p>
             </p>
         </footer>
     );

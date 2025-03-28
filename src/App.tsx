@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Main, MentionsLegales } from './pages';
-import { useEffect } from 'react';
+import { Main, MentionsLegales, ProjectDetails } from './pages';
 
 function App() {
   return (
@@ -8,6 +7,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/mentions-legales" element={<MentionsLegales />} />
+        <Route path="/project/:name" Component={ProjectDetails} />
       </Routes>
     </Router>
   );

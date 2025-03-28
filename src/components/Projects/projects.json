@@ -13,7 +13,7 @@
               "skills": [
                 {
                   "competence": "Développer des interfaces utilisateurs",
-                  "value": 5
+                  "value": 3
                 },
                 {
                   "competence": "Implémenter et Élaborer des conceptions simples",
@@ -25,7 +25,7 @@
                 },
                 {
                   "competence": "Vérifier et valider la qualité de l’application par les tests",
-                  "value": 5
+                  "value": 3
                 }
               ]
             },
@@ -43,7 +43,7 @@
                 },
                 {
                   "competence": "Vérifier et valider la qualité de l’application par les tests",
-                  "value": 5
+                  "value": 3
                 },
                 {
                   "competence": "Définir et mettre en œuvre une démarche de suivi de projet",
@@ -69,11 +69,11 @@
                 },
                 {
                   "competence": "Choisir des structures de données complexes adaptées au problème",
-                  "value": 5
+                  "value": 4
                 },
                 {
                   "competence": "Concevoir et développer des applications communicantes",
-                  "value": 5
+                  "value": 4
                 },
                 {
                   "competence": "Formaliser les besoins du client et de l’utilisateur",
@@ -99,11 +99,11 @@
                 },
                 {
                   "competence": "Faire évoluer une application existante",
-                  "value": 5
+                  "value": 3
                 },
                 {
                   "competence": "Intégrer des solutions dans un environnement de production",
-                  "value": 5
+                  "value": 3
                 }
               ]
             }
@@ -126,11 +126,11 @@
                 },
                 {
                   "competence": "Tester une application et avoir un regard critique",
-                  "value": 5
+                  "value": 3
                 },
                 {
                   "competence": "Formaliser et implémenter des outils mathématiques en informatique",
-                  "value": 5
+                  "value": 4
                 }
               ]
             },
@@ -143,16 +143,16 @@
               "description": "🖥🔍 Exploration algorithmique d'un programme avec les graphes : Implémentation des différents algorithmes de graphes en python.",
               "skills": [
                 {
-                  "competence": "AC12.1 - Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données...)",
-                  "value": 5
+                  "competence": "Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données...)",
+                  "value": 4
                 },
                 {
-                  "competence": "AC12.2 - Comparer des algorithmes pour des problèmes classiques (tris simples, recherche...)",
-                  "value": 5
+                  "competence": "Comparer des algorithmes pour des problèmes classiques (tris simples, recherche...)",
+                  "value": 4
                 },
                 {
                   "competence": "Formaliser et mettre en œuvre des outils mathématiques pour l'informatique",
-                  "value": 5
+                  "value": 4
                 }
               ]
             }
@@ -171,16 +171,16 @@
               "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
               "skills": [
                 {
-                  "competence": "AC23.1 - Concevoir et développer des applications communicantes",
+                  "competence": "Concevoir et développer des applications communicantes",
                   "value": 5
                 },
                 {
-                  "competence": "AC23.2 - Utiliser des serveurs et des services réseaux virtualisés",
+                  "competence": "Utiliser des serveurs et des services réseaux virtualisés",
                   "value": 5
                 },
                 {
-                  "competence": "AC23.3 - Sécuriser les services et données d'un système",
-                  "value": 5
+                  "competence": "Sécuriser les services et données d'un système",
+                  "value": 4
                 }
               ]
             }
@@ -198,20 +198,20 @@
               "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
               "skills": [
                 {
-                  "competence": "AC24.1 - Optimiser les modèles de données de l'entreprise",
-                  "value": 5
+                  "competence": "Optimiser les modèles de données de l'entreprise",
+                  "value": 3
                 },
                 {
-                  "competence": "AC24.2 - Assurer la sécurité des données (intégrité et confidentialité)",
-                  "value": 5
+                  "competence": "Assurer la sécurité des données (intégrité et confidentialité)",
+                  "value": 4
                 },
                 {
-                  "competence": "AC24.3 - Organiser la restitution de données à travers la programmation et la visualisation",
-                  "value": 5
+                  "competence": "Organiser la restitution de données à travers la programmation et la visualisation",
+                  "value": 4
                 },
                 {
-                  "competence": "AC24.4 - Manipuler des données hétérogènes",
-                  "value": 5
+                  "competence": "Manipuler des données hétérogènes",
+                  "value": 4
                 }
               ]
             },
@@ -224,19 +224,19 @@
               "description": "👁️🛰️​ Création d'un tableau de bord pour synthétiser les données des contrôles de la CNIL sur 5 ans.",
               "skills": [
                 {
-                  "competence": "AC24.1 - Optimiser les modèles de données de l'entreprise",
+                  "competence": "Optimiser les modèles de données de l'entreprise",
+                  "value": 3
+                },
+                {
+                  "competence": "Assurer la sécurité des données (intégrité et confidentialité)",
+                  "value": 4
+                },
+                {
+                  "competence": "Organiser la restitution de données à travers la programmation et la visualisation",
                   "value": 5
                 },
                 {
-                  "competence": "AC24.2 - Assurer la sécurité des données (intégrité et confidentialité)",
-                  "value": 5
-                },
-                {
-                  "competence": "AC24.3 - Organiser la restitution de données à travers la programmation et la visualisation",
-                  "value": 5
-                },
-                {
-                  "competence": "AC24.4 - Manipuler des données hétérogènes",
+                  "competence": "Manipuler des données hétérogènes",
                   "value": 5
                 }
               ]
@@ -255,19 +255,19 @@
               "description": "💳🏦 PimpMyPaid un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
               "skills": [
                 {
-                  "competence": "AC25.1 - Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information",
+                  "competence": "Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information",
                   "value": 3
                 },
                 {
-                  "competence": "AC25.2 - Formaliser les besoins du client et de l'utilisateur",
+                  "competence": "Formaliser les besoins du client et de l'utilisateur",
                   "value": 5
                 },
                 {
-                  "competence": "AC25.3 - Identifier les critères de faisabilité d'un projet informatique",
-                  "value": 5
+                  "competence": "Identifier les critères de faisabilité d'un projet informatique",
+                  "value": 4
                 },
                 {
-                  "competence": "AC25.4 - Définir et mettre en œuvre une démarche de suivi de projet",
+                  "competence": "Définir et mettre en œuvre une démarche de suivi de projet",
                   "value": 5
                 }
               ]

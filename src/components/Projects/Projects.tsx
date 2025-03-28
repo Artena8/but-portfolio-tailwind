@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import projectData from "./projects.json";
 import { ProjectCard } from "./ProjectCard";
-import { Categorie, Project } from "./ProjectTypes";
+import { Categorie, Project } from "../../types/ProjectTypes";
 import { motion } from "framer-motion";
 
 const categoryList = [

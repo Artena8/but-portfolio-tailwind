@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { Project } from "./ProjectTypes";
+import { Project } from "../../types/ProjectTypes";
+import { Link } from "react-router-dom";
 
 export const ProjectCard = ({ project }: { project: Project }) => {
     return (
@@ -29,17 +29,13 @@ export const ProjectCard = ({ project }: { project: Project }) => {
                     ))}
                 </div>
 
-                {project.link && (
-                    <motion.a
-                        href={project.link}
-                        className="hover:font-black mt-auto inline-block text-primary-500 font-semibold"
-                        whileHover={{ textDecoration: "underline", textUnderlineOffset: "5px" }}
-                        transition={{ duration: 0.3, ease: [0, 0.71, 0.2, 1.01] }}
-                        target="_blank"
-                        >
-                        Voir le projet →
-                    </motion.a>
-                )}
+                <Link 
+                    to={`/project/${project.name}`} 
+                    state={{ project }}
+                    className="hover:font-black mt-auto inline-block text-primary-500 font-semibold"
+                >
+                    Voir le projet → 
+                </Link>
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import jsonData from "./hardskills.json";
-import { ListeCompetences, Categorie } from "./SkillTypes";
+import { ListeCompetences, Categorie } from "../../types/SkillTypes";
 
 export const HardSkills: React.FC = () => {
     const [hovered, setHovered] = useState<string | null>(null);

@@ -12,7 +12,7 @@ export const ProjectDetails = () => {
     }
 
     return (
-        <div className="mx-auto p-5 background w-full h-screen">
+        <div className="mx-auto p-5 background w-full h-auto sm:h-screen">
             <Link to="/#Projets" className="absolute top-5 left-5 p-2 text-white">
                 <motion.div
                     className="p-2 rounded-full bg-(--primary-500) shadow-md"

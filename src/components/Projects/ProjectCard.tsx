@@ -5,18 +5,20 @@ export const ProjectCard = ({ project }: { project: Project }) => {
     return (
         <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col h-full">
             {project.image && (
-                <img 
-                    src={project.image || "/default-image.jpg"}
-                    alt={project.name}
-                    className="w-full h-48 object-contain p-4"
-                />
+                <div className="flex-shrink-0 h-48 w-full mt-2">
+                    <img 
+                        src={project.image || "/default-image.jpg"}
+                        alt={project.name}
+                        className="w-full h-full object-contain"
+                    />
+                </div>
             )}
 
             <div className="p-5 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2">{project.name}</h3>
 
                 {project.description ? (
-                    <p className="text-gray-600 text-sm mb-3 text-justify">{project.description}</p>
+                    <p className="text-gray-600 text-sm mb-3 text-justify flex-grow">{project.description}</p>
                 ) : (
                     <p className="text-gray-600 text-sm mb-3">Description non disponible</p>
                 )}

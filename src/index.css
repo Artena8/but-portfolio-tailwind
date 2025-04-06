@@ -59,6 +59,23 @@ h2 {
   -moz-transform: translate(-50%,0);
 }
 
+/* THEME SWIPER LIB */
+.swiper-button-next, .swiper-button-prev {
+  color: var(--primary-500)!important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--primary-500)!important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--secondary-500)!important;
+}
+
+.swiper-slide {
+  height: auto!important;
+}
+
 
 @media (max-height: 800px) {
   .mt-custom {

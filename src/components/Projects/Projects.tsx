@@ -3,6 +3,11 @@ import projectData from "./projects.json";
 import { ProjectCard } from "./ProjectCard";
 import { Categorie, Project } from "../../types/ProjectTypes";
 import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Scrollbar, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const categoryList = [
     { id: 1, category: "Réaliser", value: "Réaliser" },
@@ -42,18 +47,39 @@ export const Projects = () => {
                 ))}
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full max-w-7xl">
+            <Swiper
+                modules={[Scrollbar, Pagination]}
+                slidesPerView={1}
+                spaceBetween={20}
+                scrollbar
+                pagination={{ clickable: true }}
+                className="w-full !flex !items-stretch"
+                breakpoints={{
+                    720: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    1248: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                }}
+            >
                 {filteredProjects.map((item: Project) => (
-                    <motion.div
-                        key={item.name}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.3, type: "spring", stiffness: 80 }} // RESSORT
-                    >
-                        <ProjectCard project={item} />
-                    </motion.div>
+                    <SwiperSlide key={item.name} className="flex !flex !items-stretch">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.3, type: "spring", stiffness: 80 }}
+                            className="w-full !flex !items-stretch pb-14 pt-2"
+                        >
+                            <div className="flex flex-col justify-between">
+                                <ProjectCard project={item} />
+                            </div>
+                        </motion.div>
+                    </SwiperSlide>
                 ))}
-            </div>
+            </Swiper>
         </div>
     );
 };

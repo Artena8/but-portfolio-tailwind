@@ -5657,6 +5657,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swiper@npm:^11.2.6":
+  version: 11.2.6
+  resolution: "swiper@npm:11.2.6"
+  checksum: 10c0/36ba63e2d1c5045f647f0f07b3a25c164393fb89b17db63f57fa9f776eb61bc5cb2c34634f80cf69caaddc209a174d0cd7be23c580785534569ea4a098b3a42c
+  languageName: node
+  linkType: hard
+
 "tailwindcss@npm:4.0.17, tailwindcss@npm:^4.0.14":
   version: 4.0.17
   resolution: "tailwindcss@npm:4.0.17"
@@ -6024,6 +6031,7 @@ __metadata:
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
     react-router-dom: "npm:^7.4.0"
+    swiper: "npm:^11.2.6"
     tailwindcss: "npm:^4.0.14"
     typescript: "npm:~5.7.2"
     vite: "npm:^6.2.2"

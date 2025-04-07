@@ -1,50 +1,113 @@
-import { useMemo, useState } from "react";
-import projectData from "./projects.json";
+import { useEffect, useMemo, useState } from "react";
+import projectData from "./projects_new.json";
 import { ProjectCard } from "./ProjectCard";
-import { Categorie, Project } from "../../types/ProjectTypes";
+import { Project } from "../../types/ProjectTypes";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, Pagination } from "swiper/modules";
+import { ContextMenuFilter } from "./ContextMenuFilter";
+import { XMarkIcon } from "@heroicons/react/24/solid";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const categoryList = [
-    { id: 1, category: "Réaliser", value: "Réaliser" },
-    { id: 2, category: "Optimiser", value: "Optimiser" },
-    { id: 3, category: "Administrer", value: "Administrer" },
-    { id: 4, category: "Gérer", value: "Gérer" },
-    { id: 5, category: "Conduire", value: "Conduire" },
-    { id: 6, category: "Collaborer", value: "Collaborer" },
-];
-
 export const Projects = () => {
-    const [filter, setFilter] = useState("Réaliser");
+    const allProjects: Project[] = projectData;
 
-    const categories: Categorie = projectData.categories;
+    const allTags = Array.from(new Set(allProjects.flatMap((p) => p.tags || [])));
+    const allLangages = Array.from(new Set(allProjects.flatMap((p) => p.langages || [])));
+    const allTools = Array.from(new Set(allProjects.flatMap((p) => p.tools || [])));
+
+    const [selectedTags, setSelectedTags] = useState<string[]>([]);
+    const [selectedLangages, setSelectedLangages] = useState<string[]>([]);
+    const [selectedTools, setSelectedTools] = useState<string[]>([]);
+
+    const [isOpenTags, setIsOpenTags] = useState(false);
+    const [isOpenLangages, setIsOpenLangages] = useState(false);
+    const [isOpenTools, setIsOpenTools] = useState(false);
+
+    const toggleSelection = (item: string, list: string[], setList: (val: string[]) => void) => {
+        if (list.includes(item)) {
+            setList(list.filter((i) => i !== item));
+        } else {
+            setList([...list, item]);
+        }
+    };
 
     const filteredProjects = useMemo(() => {
-        return categories[filter]?.projects || [];
-    }, [filter]);
+        return allProjects.filter((project) => {
+            const tagMatch = selectedTags.length === 0 || selectedTags.every((tag) => project.tags?.includes(tag));
+            const langMatch = selectedLangages.length === 0 || selectedLangages.every((lang) => project.langages?.includes(lang));
+            const toolMatch = selectedTools.length === 0 || selectedTools.every((tool) => project.tools?.includes(tool));
+
+            return tagMatch && langMatch && toolMatch;
+        });
+    }, [selectedTags, selectedLangages, selectedTools, allProjects]);
+
+    useEffect(() => {
+        if (isOpenTags == true) {
+            setIsOpenLangages(false);
+            setIsOpenTools(false);
+        }
+    }, [isOpenTags]);
+
+    useEffect(() => {
+        if (isOpenLangages == true) {
+            setIsOpenTags(false);
+            setIsOpenTools(false);
+        }
+    }, [isOpenLangages]);
+
+    useEffect(() => {
+        if (isOpenTools == true) {
+            setIsOpenLangages(false);
+            setIsOpenTags(false);
+        }
+    }, [isOpenTools]);
 
     return (
-        <div id="Projets" className="relative z-20 flex flex-col items-center min-h-screen mx-auto px-6">
+        <div id="Projets" className="relative z-20 flex flex-col items-center min-h-screen mx-auto px-6 ">
             <h2 className="text-3xl font-semibold text-center mt-20 mb-8">Mes projets</h2>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-                {categoryList.map(({ id, category }) => (
-                    <button
-                        key={id}
-                        onClick={() => setFilter(category)}
-                        className={`px-4 py-2 rounded-lg transition-all duration-300 ${
-                            filter === category
-                                ? "bg-(--primary-500) text-white"
-                                : "bg-(--secondary-100) hover:bg-(--secondary-300) cursor-pointer"
-                        }`}
-                    >
-                        {category}
-                    </button>
-                ))}
+            <div className="flex mb-8 w-auto gap-4">
+                <ContextMenuFilter
+                    title="Tags"
+                    items={allTags}
+                    selected={selectedTags}
+                    setSelected={setSelectedTags}
+                    isOpen={isOpenTags}
+                    setIsOpen={setIsOpenTags}
+                />
+                <ContextMenuFilter
+                    title="Langages"
+                    items={allLangages}
+                    selected={selectedLangages}
+                    setSelected={setSelectedLangages}
+                    isOpen={isOpenLangages}
+                    setIsOpen={setIsOpenLangages}
+                />
+                <ContextMenuFilter
+                    title="Outils"
+                    items={allTools}
+                    selected={selectedTools}
+                    setSelected={setSelectedTools}
+                    isOpen={isOpenTools}
+                    setIsOpen={setIsOpenTools}
+                />
+                <button
+                    onClick={() => {
+                        setSelectedTags([]);
+                        setSelectedLangages([]);
+                        setSelectedTools([]);
+                        setIsOpenTags(false);
+                        setIsOpenLangages(false);
+                        setIsOpenTools(false);
+                    }}
+                    className="mb-6 text-sm flex items-center justify-center p-2 bg-white rounded-full border hover:bg-gray-100"
+                >
+                    <XMarkIcon className="h-6 w-6 text-(--primary-500) hover:text-(--primary-500) cursor-pointer" />
+                </button>
             </div>
 
             <Swiper
@@ -53,7 +116,7 @@ export const Projects = () => {
                 spaceBetween={20}
                 scrollbar
                 pagination={{ clickable: true }}
-                className="w-full !flex !items-stretch"
+                className="w-full"
                 breakpoints={{
                     720: {
                         slidesPerView: 2,
@@ -65,16 +128,16 @@ export const Projects = () => {
                     },
                 }}
             >
-                {filteredProjects.map((item: Project) => (
-                    <SwiperSlide key={item.name} className="flex !flex !items-stretch">
+                {filteredProjects.map((project: Project) => (
+                    <SwiperSlide key={project.title} className="!flex !items-stretch">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.3, type: "spring", stiffness: 80 }}
-                            className="w-full !flex !items-stretch pb-14 pt-2"
+                            className="w-full flex items-stretch pb-14 pt-2"
                         >
-                            <div className="flex flex-col justify-between">
-                                <ProjectCard project={item} />
+                            <div className="flex flex-col justify-between h-full w-full">
+                                <ProjectCard project={project} />
                             </div>
                         </motion.div>
                     </SwiperSlide>

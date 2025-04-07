@@ -1,0 +1,55 @@
+[
+    {
+        "title": "Backpack Hero",
+        "date": "2023",
+        "description": "🎒🐭 Jeu roguelike ! Partez à l'aventure avec votre sac à dos pour parcourir le donjon en abattant les monstres avec vos différents trésors !",
+        "link": "https://github.com/InkyYuu/Backpack-Hero",
+        "logo": "./projet/bckphero.png",
+        "tags": ["BUT","POO","MVC","Jeu vidéo","Solo"],
+        "langages": ["Java"],
+        "tools": ["Eclispe", "Maven", "Trello"],
+        "screens": ["./projet/bckphero.png", "./projet/bckphero.png", "./projet/bckphero.png"],
+        "skills": [
+            {"competence" : "Création d'un jeu multijoueur local en python", "type" : "Réaliser", "value" : 3}
+            ],
+        "friends" : [
+            {"name" : "Kellian Bredeau", "url" : ""}
+        ]
+    },
+    {
+        "title": "SplaaatBall",
+        "date": "2022",
+        "description": "🎮🔵 Jeu 'Guerre de territoire' implémenté en python pour 2 joueurs. Placez vos pions de couleur pour recouvrir un maximum l'écran et gagner la partie ! Créateur de cartes inclus",
+        "link": "https://github.com/InkyYuu/Splaaatball",
+        "logo": "./projet/splaaatball.png",
+        "tags": ["Jeu vidéo", "Multijoueur"],
+        "langages": ["Python"],
+        "tools": ["Visual Studio Code"],
+        "screens": [],
+        "skills": [
+            {"competence" : "Création d'un jeu multijoueur local en python", "type" : "Réaliser", "value" : 3},
+            {"competence" : "Apprentissage de l'utilisation d'une librairie graphique", "type" : "Réaliser", "value" : 3},
+            {"competence" : "Utilisation d'outils mathématiques pour le jeu", "type" : "Réaliser", "value" : 3}
+            ],
+        "friends" : [
+            {"name" : "Kellian Bredeau", "url" : ""}
+            ]
+    },
+    {
+        "title": "Script Ammortissement Comptabilité",
+        "date": "2023",
+        "description": "📈🧮 Programmes python pour calculer le taux linéaire, le taux dégressif et faire la balance. Le code est à peu près formaté pour un affichage propre sur calculatrice.",
+        "link": "https://github.com/InkyYuu/Comptabilite",
+        "logo": "./projet/compta.png",
+        "tags": ["Script", "Calculatrice", "Comptabilité"],
+        "langages": ["Python"],
+        "tools": [],
+        "screens": [],
+        "skills": [
+            {"competence" : "Création d'un jeu multijoueur local en python", "type" : "Réaliser", "value" : 3}
+        ],
+        "friends" : [
+            {"name" : "Kellian Bredeau", "url" : ""}
+        ]
+    }
+]

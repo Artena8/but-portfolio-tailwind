@@ -1,11 +1,15 @@
 export type Project = {
-    name: string;
-    link?: string; 
+    title: string;
     date?: string;
-    image?: string; 
-    tools?: string[]; 
     description?: string; 
-    skills: { competence: string; value: number; }[];
+    link?: string; 
+    logo?: string; 
+    tags?: string[]; 
+    langages?: string[]; 
+    tools?: string[]; 
+    screens?: string[]; 
+    skills?: { competence: string; type: string; value: number }[];
+    friends?: { name: string; url: string }[];
 };
 
 export type ProjectCategorie = {

@@ -25,16 +25,26 @@ export const ProjectDetails = () => {
 
             <motion.div className="bg-white rounded-xl shadow-lg p-5 pl-12">
                 <div className="flex flex-col lg:flex-row">
-                    {project.image && (
+                    {project.logo && (
                         <img
-                            src={project.image ? `${import.meta.env.BASE_URL}/${project.image}` : "/default-image.jpg"} 
-                            alt={project.name}
+                            src={project.logo ? `${import.meta.env.BASE_URL}/${project.logo}` : "/default-logo.jpg"} 
+                            alt={project.title}
                             className="w-full lg:w-1/3 h-auto object-contain p-4"
                         />
                     )}
 
                     <div className="lg:pl-5 flex flex-col">
-                        <h1 className="text-4xl font-bold mb-12">{project.name}</h1>
+                        <h1 className="text-4xl font-bold mb-12">{project.title}</h1>
+                        <div className="flex flex-wrap gap-2 mb-4">
+                            {(project.tags || []).map((tool, index) => (
+                                <span
+                                    key={index}
+                                    className="text-xs px-2 py-1 bg-(--secondary-200) rounded-md"
+                                >
+                                    {tool}
+                                </span>
+                            ))}
+                        </div>
 
                         {project.description ? (
                             <p className="text-gray-600 text-base mb-5">{project.description}</p>
@@ -53,6 +63,18 @@ export const ProjectDetails = () => {
                                 </span>
                             ))}
                         </div>
+
+                        <div className="flex flex-wrap gap-2 mb-4">
+                            {(project.langages || []).map((tool, index) => (
+                                <span
+                                    key={index}
+                                    className="text-xs px-2 py-1 bg-(--secondary-200) rounded-md"
+                                >
+                                    {tool}
+                                </span>
+                            ))}
+                        </div>
+
 
                         <h3 className="h3 text-xl mb-2">Compétences acquises :</h3>
                         <div className="mb-5">

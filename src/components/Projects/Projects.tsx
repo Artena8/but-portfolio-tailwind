@@ -67,7 +67,7 @@ export const Projects = () => {
     }, [isOpenTools]);
 
     return (
-        <div id="Projets" className="relative z-20 flex flex-col items-center min-h-screen mx-auto px-6 ">
+        <div id="Projets" className="relative z-20 flex flex-col items-center min-h-screen mx-auto px-6">
             <h2 className="text-3xl font-semibold text-center mt-20 mb-8">Mes projets</h2>
 
             <div className="flex mb-8 w-auto gap-4">
@@ -110,39 +110,45 @@ export const Projects = () => {
                 </button>
             </div>
 
-            <Swiper
-                modules={[Scrollbar, Pagination]}
-                slidesPerView={1}
-                spaceBetween={20}
-                scrollbar
-                pagination={{ clickable: true }}
-                className="w-full"
-                breakpoints={{
-                    720: {
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-                    },
-                    1248: {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                }}
-            >
+            {/* Slider < lg */}
+            <div className="w-full lg:hidden">
+                <Swiper
+                    modules={[Scrollbar, Pagination]}
+                    slidesPerView={1}
+                    spaceBetween={20}
+                    scrollbar
+                    pagination={{ clickable: true }}
+                >
+                    {filteredProjects.map((project: Project) => (
+                        <SwiperSlide key={project.title} className="!flex !items-stretch">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.3, type: "spring", stiffness: 80 }}
+                                className="w-full flex items-stretch pb-14 pt-2"
+                            >
+                                <div className="flex flex-col justify-between h-full w-full">
+                                    <ProjectCard project={project} />
+                                </div>
+                            </motion.div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+
+            {/* Grille > lg */}
+            <div className="hidden lg:grid grid-cols-3 gap-6 w-full pb-14">
                 {filteredProjects.map((project: Project) => (
-                    <SwiperSlide key={project.title} className="!flex !items-stretch">
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.3, type: "spring", stiffness: 80 }}
-                            className="w-full flex items-stretch pb-14 pt-2"
-                        >
-                            <div className="flex flex-col justify-between h-full w-full">
-                                <ProjectCard project={project} />
-                            </div>
-                        </motion.div>
-                    </SwiperSlide>
+                    <motion.div
+                        key={project.title}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, type: "spring", stiffness: 80 }}
+                    >
+                        <ProjectCard project={project} />
+                    </motion.div>
                 ))}
-            </Swiper>
+            </div>
         </div>
     );
 };

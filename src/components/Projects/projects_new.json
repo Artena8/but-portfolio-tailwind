@@ -13,7 +13,7 @@
             {"competence" : "Création d'un jeu multijoueur local en python", "type" : "Réaliser", "value" : 3}
             ],
         "friends" : [
-            {"name" : "Kellian Bredeau", "url" : ""}
+            {"name" : "Kellian Bredeau", "url" : "https://kellian.awooo.fr"}
         ]
     },
     {
@@ -32,7 +32,7 @@
             {"competence" : "Utilisation d'outils mathématiques pour le jeu", "type" : "Réaliser", "value" : 3}
             ],
         "friends" : [
-            {"name" : "Kellian Bredeau", "url" : ""}
+            {"name" : "Kellian Bredeau", "url" : "https://kellian.awooo.fr"}
             ]
     },
     {
@@ -46,10 +46,65 @@
         "tools": [],
         "screens": [],
         "skills": [
-            {"competence" : "Création d'un jeu multijoueur local en python", "type" : "Réaliser", "value" : 3}
-        ],
-        "friends" : [
-            {"name" : "Kellian Bredeau", "url" : ""}
-        ]
+        {"competence" : "Compréhension des notions de comptabilité", "type" : "Collaborer", "value" : "4"},
+        {"competence" : "Utilisation d'outils mathématiques pour la comptabilité", "type" : "Optimiser", "value" : "4"}
+    ],
+    "friends" : [
+        {"name" : "Kellian Bredeau", "url" : "https://kellian.awooo.fr"}
+    ]
+    },
+    {
+        "title": "ChillZone - MonIUT",
+        "date": "2025",
+        "description": "🎓📱 ChillZone simplifie la vie des étudiants : réservez salles, box ou repas en un clic, consultez votre emploi du temps et orientez-vous sur le campus. Profs et admins gèrent tout via un backoffice intuitif !",
+        "link": "https://github.com/FC-Zen/ChillZone",
+        "logo": "./projet/logo-IUT.png",
+        "tags": ["Université","Application mobile","Back-office"],
+        "langages": ["React","React Native","Python","Django","SQL"],
+        "tools": ["Jira","Visual Studio Code","XAMPP","Docker"],
+        "screens": [],
+        "skills": [
+        {"competence" : "Implémenter les architectures adaptées", "type" : "Réaliser", "value" : "3"},
+        {"competence" : "Collaborer avec une MOA", "type" : "Réaliser", "value" : "3"}
+    ],
+    "friends" : [
+        {"name" : "", "url" : ""}
+    ]
+    },
+    {
+        "title": "Links Awordkening : Where Words Unite",
+        "date": "2024",
+        "description": "🌿💬 \"Links Awordkening : Where Words Unite !\" est un jeu en ligne dans lequel vous devez défier votre esprit avec des chaînes de mots et explorez un monde de mots similaires pour relever le défi ultime du langage !",
+        "link": "https://github.com/FC-Rats/Links-Awordkening",
+        "logo": "./projet/lalogo.png",
+        "tags": ["Jeu vidéo","Site Web","Multijoueur"],
+        "langages": ["C", "Java", "SQL", "HTML", "CSS", "PHP", "Python", "React"],
+        "tools": ["Jira","Confluence","Visual Studio Code","Docker"],
+        "screens": [],
+        "skills": [
+        {"competence" : "Concevoir et développer des applications communicantes", "type" : "Réaliser", "value" : "4"},
+        {"competence" : "Définir et mettre en œuvre une démarche de suivi de projet", "type" : "Réaliser", "value" : "4"}
+    ],
+    "friends" : [
+        {"name" : "", "url" : ""}
+    ]
+    },
+    {
+        "title": "PimpMyPaid",
+        "date": "2023",
+        "description": "💳🏦 PimpMyPaid un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
+        "link": "https://github.com/FC-Rats/PimpMyPaids",
+        "logo": "./projet/pmp.png",
+        "tags": ["Site Web","Back-office"],
+        "langages": ["PHP", "HTML", "CSS", "JavaScript", "Ajax","SQL"],
+        "tools": ["Jira","Xampp"],
+        "screens": [],
+        "skills": [
+        {"competence" : "Adopter de bonnes pratiques de conception et de programmation", "type" : "Réaliser", "value" : "3"},
+        {"competence" : "Définir et mettre en œuvre une démarche de suivi de projet", "type" : "Réaliser", "value" : "4"}
+    ],
+    "friends" : [
+        {"name" : "", "url" : ""}
+    ]
     }
 ]
